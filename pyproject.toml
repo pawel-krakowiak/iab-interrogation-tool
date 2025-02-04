@@ -1,0 +1,29 @@
+[project]
+name = "lssd_interview_parser_app"
+version = "0.1.0"
+description = "An application for parsing and analyzing logs, for Vibe RolePlay LSSD internal use."
+authors = [
+    { name = "FuRaJ", email = "dev.pawel.krakowiak@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pydantic",
+    "PyQt6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.poetry]
+packages = [
+    { include = "src" }
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
