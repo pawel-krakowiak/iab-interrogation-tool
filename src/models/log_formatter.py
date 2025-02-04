@@ -1,31 +1,40 @@
 """
-Module log_formatter
-====================
+src/models/log_formatter.py
 
-This module provides a LogFormatter class for parsing and formatting log lines.
-Each log line is expected to follow the format:
-    [Timestamp] [Action] [Content]
-
-For example:
-    [2.02.2025 22:19:38] [Czat IC] Howard Goldberg mówi: Na glebe skurwysynu ręce na głowę szeroko nogi.
-    [2.02.2025 22:19:35] [Akcja /me] * Nieznajomy JCZAK wskazała na Musaeva, spojrzała na Walsh'a.
-
-The formatter splits each log line into:
-    - timestamp (with separate date and time parts)
-    - action
-    - speaker prefix: the entire speaker part (e.g., "Lauren Devaughn mówi:")
-    - message: the remaining log text
-    - is_radio: a boolean indicating if the call is a radio call (when extra info "(radio)" is present)
-
-The formatted output is returned as an HTML-formatted string with inline CSS styles.
+Provides a LogFormatter class for parsing and formatting log lines with
+syntax highlighting and optional radio detection.
 """
 
 import re
+import logging
 from datetime import datetime
-from typing import Optional, Dict
+from typing import Optional, Dict, Tuple
+
+logger = logging.getLogger(__name__)
+
+ACTION_COLOR_MAP: Dict[str, str] = {
+        "Czat IC": "#FFD700",   # Gold
+        "Czat OOC": "#FF8C00",  # Dark Orange
+        "Akcja /me": "#ADFF2F", # GreenYellow
+        "Akcja /do": "#00CED1", # DarkTurquoise
+        "Komenda": "#FF4500",   # OrangeRed
+        "PW": "#DA70D6",        # Orchid
+        "default": "#FFFFFF",   # Fallback
+    }
 
 class LogFormatter:
-    """A class to parse and format log lines with syntax highlighting."""
+    """Parses and formats log lines into HTML or structured data."""
+
+    ACTION_COLOR_MAP: Dict[str, str] = {
+            "Czat IC": "#FFD700",   # Gold
+            "Czat OOC": "#FF8C00",  # Dark Orange
+            "Akcja /me": "#ADFF2F", # GreenYellow
+            "Akcja /do": "#00CED1", # DarkTurquoise
+            "Komenda": "#FF4500",   # OrangeRed
+            "PW": "#DA70D6",        # Orchid
+            "default": "#FFFFFF",   # Fallback
+        }
+
 
     LOG_PATTERN = re.compile(
         r"^\[(?P<timestamp>[^\]]+)\]\s+\[(?P<action>[^\]]+)\]\s+(?P<message>.*)$"
@@ -34,27 +43,24 @@ class LogFormatter:
     NAME_PATTERN = re.compile(
         r"^(?P<name>[A-ZĄĆĘŁŃÓŚŹŻ][\w\s\-\']+?)\s+"
         r"(?P<tone>mówi|szepcze|krzyczy)"
-        r"(?:\s*\((?P<extra>[^)]+)\))?"  # optional extra info (e.g., radio)
+        r"(?:\s*\((?P<extra>[^)]+)\))?"  # e.g., (radio)
         r"(?:\s+do\s+[A-ZĄĆĘŁŃÓŚŹŻ][\w\s\-\']+?)?:\s*"
     )
 
-    ACTION_COLOR_MAP: Dict[str, str] = {
-        "Czat IC": "#FFD700",  # Gold
-        "Czat OOC": "#FF8C00",  # Dark Orange
-        "Akcja /me": "#ADFF2F",  # GreenYellow
-        "Akcja /do": "#00CED1",  # DarkTurquoise
-        "Komenda": "#FF4500",   # OrangeRed
-        "PW": "#DA70D6",        # Orchid
-        "default": "#FFFFFF",   # White (default)
-    }
-
     def parse_line(self, line: str) -> Optional[Dict[str, str]]:
-        """Parses a log line into its components."""
+        """
+        Parses a single log line into structured data.
+        Returns None if the format does not match LOG_PATTERN.
+        """
         match = self.LOG_PATTERN.match(line)
         if not match:
+            logger.debug("No match for LOG_PATTERN: %s", line)
             return None
 
-        timestamp_str, action, message = match.group("timestamp"), match.group("action").strip(), match.group("message").strip()
+        timestamp_str = match.group("timestamp")
+        action = match.group("action").strip()
+        message = match.group("message").strip()
+
         date_str, time_str = self._parse_timestamp(timestamp_str)
         prefix, is_radio, message = self._extract_speaker_info(message)
 
@@ -68,34 +74,47 @@ class LogFormatter:
             "is_radio": is_radio,
         }
 
-    def _parse_timestamp(self, timestamp: str) -> (str, str):
-        """Parses a timestamp string into date and time."""
+    def _parse_timestamp(self, timestamp: str) -> Tuple[str, str]:
+        """
+        Parses a timestamp string into date (YYYY-MM-DD) and time (HH:MM:SS).
+        Returns empty strings if parsing fails.
+        """
         try:
             dt = datetime.strptime(timestamp, "%d.%m.%Y %H:%M:%S")
             return dt.strftime("%Y-%m-%d"), dt.strftime("%H:%M:%S")
         except ValueError:
+            logger.warning("Failed to parse timestamp: %s", timestamp)
             return "", ""
 
-    def _extract_speaker_info(self, message: str) -> (str, bool, str):
-        """Extracts speaker prefix and determines if the message is from radio."""
+    def _extract_speaker_info(self, message: str) -> Tuple[str, bool, str]:
+        """
+        Extracts speaker prefix from the message and detects if it's a radio call.
+        Returns (prefix, is_radio, new_message).
+        """
         match = self.NAME_PATTERN.match(message)
         if not match:
             return "", False, message
 
         prefix = match.group(0).strip()
-        is_radio = match.group("extra") and match.group("extra").lower() == "radio"
-        return prefix, is_radio, message[len(prefix):].strip()
+        extra = match.group("extra") or ""
+        is_radio = extra.lower() == "radio"
+        new_message = message[len(prefix):].strip()
+        return prefix, is_radio, new_message
 
     def format_line(self, line: str, index: int) -> str:
-        """Formats a single log line into an HTML string with syntax highlighting."""
+        """
+        Formats a single log line into an HTML snippet with syntax highlighting.
+        Returns a <pre> block if parsing fails.
+        """
         parsed = self.parse_line(line)
         if not parsed:
+            logger.debug("Line %d unrecognized format: %s", index, line)
             return f"<pre>{index}: {line}</pre>"
 
-        timestamp_color = "#00BFFF"  # DeepSkyBlue
+        timestamp_color = "#00BFFF"
         action_color = self.ACTION_COLOR_MAP.get(parsed["action"], self.ACTION_COLOR_MAP["default"])
-        prefix_color = "#FFFFFF"       # White
-        message_color = "#CCCCCC"      # Light gray
+        prefix_color = "#FFFFFF"
+        message_color = "#CCCCCC"
 
         return (
             f'<span style="color: #AAAAAA; font-weight: bold;">[{index}]</span> '

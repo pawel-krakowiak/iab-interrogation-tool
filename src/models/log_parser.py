@@ -1,20 +1,28 @@
+"""
+src/models/log_parser.py
+
+Loads raw log lines from a file, extracts unique users, and provides sorted logs.
+"""
+
+import os
 import re
+import logging
 from typing import List, Set
+
+logger = logging.getLogger(__name__)
 
 
 class LogParser:
     """
-    Handles parsing of log files, extracting messages and unique users.
+    Parses a log file, storing all lines and detecting unique users by pattern.
     """
 
     USER_PATTERN = re.compile(r"(\w+ \w+) mówi:")
 
     def __init__(self, file_path: str) -> None:
         """
-        Initialize LogParser with a file path.
-
         Args:
-            file_path (str): Path to the log file.
+            file_path (str): The path to a log file.
         """
         self.file_path: str = file_path
         self.logs: List[str] = []
@@ -23,29 +31,25 @@ class LogParser:
 
     def _load_logs(self) -> None:
         """Loads logs from the file and extracts unique users."""
-        try:
-            with open(self.file_path, "r", encoding="utf-8") as file:
-                for line in file:
-                    stripped_line = line.strip()
-                    self.logs.append(stripped_line)
-                    self._extract_user(stripped_line)
-        except FileNotFoundError:
+        if not os.path.isfile(self.file_path):
+            logger.error("File not found: %s", self.file_path)
             raise ValueError(f"File not found: {self.file_path}")
 
+        logger.info("Loading logs from %s", self.file_path)
+        with open(self.file_path, "r", encoding="utf-8") as file:
+            for line in file:
+                stripped_line = line.strip()
+                self.logs.append(stripped_line)
+                self._extract_user(stripped_line)
+
     def _extract_user(self, line: str) -> None:
-        """Extracts unique users from the log line."""
+        """Extracts unique users from a line based on USER_PATTERN."""
         match = self.USER_PATTERN.search(line)
         if match:
             self.users.add(match.group(1))
 
     def get_sorted_logs(self, ascending: bool = True) -> List[str]:
         """
-        Returns logs sorted by date.
-
-        Args:
-            ascending (bool): True for ascending, False for descending.
-
-        Returns:
-            List[str]: Sorted log entries.
+        Returns logs sorted alphabetically or by date (expand as needed).
         """
         return sorted(self.logs, reverse=not ascending)
