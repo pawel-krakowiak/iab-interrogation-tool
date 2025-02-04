@@ -1,0 +1,30 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual Environment
+venv/
+vrp_env/
+
+# Poetry
+poetry.lock
+
+# Pytest
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+
+# Environment Variables
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
