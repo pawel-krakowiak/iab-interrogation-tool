@@ -1,7 +1,7 @@
 
 # LSSD Interrogation Log Parser
 
-## Structure
+## Structure tree
 interrogation_log_parser:
 │── logs/                    # Application logs
 │── resources/                # Images, icons

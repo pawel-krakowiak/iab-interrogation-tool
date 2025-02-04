@@ -1,0 +1,798 @@
+[2.02.2025 22:56:25] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Zwijamy się stąd. **
+[2.02.2025 22:56:09] [Komenda] /id ocampo
+[2.02.2025 22:55:46] [Czat IC] Perseus Ilarion mówi: No witam.
+[2.02.2025 22:55:38] [Komenda] /u maske
+[2.02.2025 22:55:38] [Czat OOC] (( Jack Strauser (57): Bo IC dałeś już, skryptowo chcem. ))
+[2.02.2025 22:55:35] [Komenda] /u maska
+[2.02.2025 22:55:30] [Czat OOC] (( Jack Strauser (57): Na /w miało być. ))
+[2.02.2025 22:55:28] [Czat OOC] (( Jack Strauser (57): O chuj. ))
+[2.02.2025 22:55:27] [Czat IC] Timothy Clinard mówi: Proszę bardzo, całe miasto mówi o tym... wiemy tylko nakazie.
+[2.02.2025 22:55:24] [Akcja /me] ** Hank Queensberg zdejmuje kominiarkę z twarzy.
+[2.02.2025 22:55:08] [Akcja /me] ** Reece Crawford zdejmuje kominiarkę z twarzy.
+[2.02.2025 22:55:06] [Czat IC] ** [Kanał: 782] Blake Dawson: Copy. **
+[2.02.2025 22:55:06] [Czat IC] Blake Dawson mówi (krótkofalówka): Copy.
+[2.02.2025 22:55:02] [Czat IC] ** [Kanał: 782] Sadie Blythe: Poczekajcie aż wyjdziemy z klubu. **
+[2.02.2025 22:55:00] [Czat IC] ** [Kanał: 782] Elijah Croxley: W porządku, w takim razie opuszczam częstotliwość. Dzięki - uważajcie na siebie. **
+[2.02.2025 22:55:00] [Czat IC] Elijah Croxley mówi (krótkofalówka): W porządku, w takim razie opuszczam częstotliwość. Dzięki - uważajcie na siebie.
+[2.02.2025 22:54:42] [Czat IC] ** [Kanał: 782] Cassian Zeke: SEB, możemy się demobilizować? **
+[2.02.2025 22:54:23] [Czat IC] ** [Kanał: 782] Sadie Blythe: Lokal jest sprawdzony więc raczej nie - dzięki za pomoc. **
+[2.02.2025 22:53:59] [Czat IC] ** [Kanał: 782] Elijah Croxley: Czy jednostka canine jest dalej potrzebna na miejscu działań? **
+[2.02.2025 22:53:59] [Czat IC] Elijah Croxley mówi (krótkofalówka): Czy jednostka canine jest dalej potrzebna na miejscu działań?
+[2.02.2025 22:53:58] [Czat IC] Lauren Devaughn mówi: Idziemy, kurwa.
+[2.02.2025 22:53:57] [Czat IC] Jack Strauser mówi: Ałaa.
+[2.02.2025 22:53:54] [Akcja /me] * Lauren Devaughn złapała Jack za kark, pociągnęła go do przodu.
+[2.02.2025 22:53:44] [Czat IC] Jack Strauser mówi: Nie kopie go tylko pukam grzecznie do drzwi.
+[2.02.2025 22:53:43] [Czat IC] Blake Dawson mówi: To  go lepiej zabierz.
+[2.02.2025 22:53:37] [Czat IC] Lauren Devaughn mówi: Już go zabieram.
+[2.02.2025 22:53:34] [Czat IC] Jack Strauser mówi: Oddajcie mi fajki i zioło, były legalne.
+[2.02.2025 22:53:33] [Czat IC] Lauren Devaughn mówi: EY, ey.
+[2.02.2025 22:53:16] [Czat IC] Jack Strauser krzyczy: HALO!
+[2.02.2025 22:53:14] [Komenda] /o leczenie 70 0
+[2.02.2025 22:53:11] [Akcja /me] ** Nieznajomy BL8A reanimuje gracza Nieznajomy WDEP.
+[2.02.2025 22:53:10] [Komenda] /o reanimuj 70 0
+[2.02.2025 22:53:05] [Komenda] /o reanimuj
+[2.02.2025 22:52:57] [Czat OOC] (( Blake Dawson (626): To  sie nie bijcie jak są tu ludzie z zewnątrz. ))
+[2.02.2025 22:52:54] [Czat OOC] (( Nieznajomy WDEP (70): Sprawdzaliśmy tylko czy to wgl wszystkich wywaliło. ))
+[2.02.2025 22:52:47] [Czat OOC] (( Nieznajomy Z3U5 (373): Sory sprawdzalismy czy jest lag ok. ))
+[2.02.2025 22:52:39] [Akcja] [Pojazd Vapid Scout (UID 125646)] [Akcja] Wysiadł z pojazdu (siedzenie 2)
+[2.02.2025 22:52:37] [Czat OOC] (( Blake Dawson (626): Ogart. ))
+[2.02.2025 22:52:36] [Czat OOC] (( Blake Dawson (626): To że serwer jest bombiony nie znaczy że macie sie bić. ))
+[2.02.2025 22:52:35] [Czat OOC] (( Cassian Zeke (187): Co wy robicie. ))
+[2.02.2025 22:52:34] [Czat OOC] (( Nieznajomy Z3U5 (373): O dziala. ))
+[2.02.2025 22:52:32] [Czat OOC] (( Jose Munoz (311): Co to ma być. ))
+[2.02.2025 22:52:30] [Czat OOC] (( Jose Munoz (311): No kurwa. ))
+[2.02.2025 22:52:29] [Czat OOC] (( Nieznajomy WDEP (70): Test. ))
+[2.02.2025 22:52:29] [Czat OOC] (( Blake Dawson (626): Uspokojcie sie. ))
+[2.02.2025 22:52:29] [Czat OOC] (( Blake Dawson (626): Spokojkurwa. ))
+[2.02.2025 22:52:24] [Czat IC] Nieznajomy Z3U5 mówi: Eee.
+[2.02.2025 22:50:58] [Czat IC] Audycja Daily Globe: [...]na barkach pilotów i kontrolerów lotu. Dziękuję za wysłuchanie dzisiejszego odcinka „The Flight Path”. Z pewnością w przyszłości wrócimy do tematu tej katastrofy, tymczasem życzę wam bezpiecznych lotów. Mówił dla was Lukas Wright.
+[2.02.2025 22:49:19] [Komenda] /o leczenie 373 0
+[2.02.2025 22:49:17] [Czat OOC] (( Nieznajomy Z3U5 (373): O dzieki byku. ))
+[2.02.2025 22:49:09] [Komenda] /o reanimacja
+[2.02.2025 22:49:08] [Komenda] /reanimuj
+[2.02.2025 22:49:07] [Czat OOC] (( Jonathan Carrington (99): Podniesc go trzeba? ))
+[2.02.2025 22:49:05] [Komenda] /o leczenie 373 0
+[2.02.2025 22:49:02] [Komenda] /o leczenie 373
+[2.02.2025 22:49:01] [Akcja /do] ** Elo. (( Nieznajomy Z3U5 ))
+[2.02.2025 22:48:55] [Komenda] /o ranimuj 373
+[2.02.2025 22:48:45] [Czat OOC] (( Jonathan Carrington (99): Oo. ))
+[2.02.2025 22:48:43] [Czat OOC] (( Blake Dawson (626): Dziala. ))
+[2.02.2025 22:48:41] [Czat OOC] (( Blake Dawson (626): ,;. ))
+[2.02.2025 22:48:41] [Czat OOC] (( Blake Dawson (626): ,. ))
+[2.02.2025 22:48:40] [Czat OOC] (( Jonathan Carrington (99): . ))
+[2.02.2025 22:48:40] [Czat OOC] (( Blake Dawson (626): Bomba w serwer  poszła XD. ))
+[2.02.2025 22:48:38] [Czat OOC] (( Jonathan Carrington (99): . ))
+[2.02.2025 22:48:38] [Czat OOC] (( Timothy Clinard (425): Działa już? ))
+[2.02.2025 22:48:38] [Czat OOC] (( Blake Dawson (626): . ))
+[2.02.2025 22:48:37] [Czat OOC] (( Cameron Suvorin (30): . ))
+[2.02.2025 22:48:37] [Czat OOC] (( Jonathan Carrington (99): . ))
+[2.02.2025 22:48:37] [Czat OOC] (( Jose Munoz (311): Halo. ))
+[2.02.2025 22:48:37] [Czat OOC] (( Perseus Ilarion (284): W chuj. ))
+[2.02.2025 22:48:37] [Czat OOC] (( Blake Dawson (626): . ))
+[2.02.2025 22:47:48] [Czat IC] Perseus Ilarion mówi: A.
+[2.02.2025 22:47:16] [Czat IC] Nieznajomy HCZTG mówi: Chuj.
+[2.02.2025 22:46:05] [Czat IC] Nieznajomy HCZTG mówi: Czarny cwel.
+[2.02.2025 22:46:05] [Czat IC] Nieznajomy BL8A mówi: Mhm.
+[2.02.2025 22:46:04] [Komenda] Wbito BW graczowi [AID: 3503, CID: 48957] Alejandro Vargas
+[2.02.2025 22:46:03] [Komenda] /o reanimuj 373
+[2.02.2025 22:45:14] [Czat IC] Nieznajomy BL8A mówi: A.
+[2.02.2025 22:45:08] [Komenda] /anims
+[2.02.2025 22:44:44] [Czat IC] Bernard Patton mówi: Pytajcie.
+[2.02.2025 22:44:33] [Czat IC] Bernard Patton mówi: Co chcieliście zapytać?
+[2.02.2025 22:43:26] [Akcja /do] ** Tak. (( Nieznajomy OAW1 ))
+[2.02.2025 22:41:07] [Czat IC] Timothy Clinard mówi: Do was - przynajmniej tyle, o co tu chodzi.
+[2.02.2025 22:40:38] [Akcja] [Akcja] Opuścił interior Palace of Pleasure (UID 27696)
+[2.02.2025 22:40:37] [Czat IC] Audycja Daily Globe: Ta katastrofa przypomina nam, jak złożone i precyzyjne musi być zarządzanie ruchem lotniczym. Nawet najmniejszy błąd – ludzki czy techniczny – może mieć tragiczne skutki. Na zakończenie audycji chciałbym oddać hołd wszystkim ofiarom tej tragedii. Widzimy, jak wielka odpowiedzialność ciąży [..]
+[2.02.2025 22:40:33] [Akcja /do] ** Bramka nie reaguje na biżuterie. ((Odegraj stosowne /do)) **
+[2.02.2025 22:40:21] [Akcja /me] * Azura Callaghan skina na rudą.
+[2.02.2025 22:40:19] [Czat IC] Azura Callaghan mówi: Widziałaś, jak skończył ostatnio Ortega?
+[2.02.2025 22:40:15] [Akcja /me] * Nieznajomy ERLYW zlał totalnie słowa J.Strauser.
+[2.02.2025 22:40:14] [Czat IC] Gonzalo Calles mówi: O strzelaninie na moście.. Yeah.
+[2.02.2025 22:39:58] [Czat IC] Jack Strauser mówi: Oi!
+[2.02.2025 22:39:50] [Akcja /me] * Amelia Lopez udała się do szatni żeby się przebrać w swoje cichy.
+[2.02.2025 22:39:46] [Czat IC] Jack Strauser mówi: Fajnie, dzęki.
+[2.02.2025 22:39:45] [Czat IC] Gonzalo Calles mówi: To nie pamiętam, może tam byłem.
+[2.02.2025 22:39:42] [Czat IC] Sadie Blythe mówi: Ale no, i tak i tak mają tą broń.
+[2.02.2025 22:39:39] [Czat IC] Lincoln Walsh mówi: Tak samo.
+[2.02.2025 22:39:38] [Akcja /me] * Lincoln Walsh podszedł do Jack Strauser, przeciął jego zippki scyzorykiem.
+[2.02.2025 22:39:32] [Czat IC] Amelia Lopez mówi: Narazie.
+[2.02.2025 22:39:21] [Czat IC] Nieznajomy BL8A mówi: Tya', zwijamy.
+[2.02.2025 22:39:09] [Czat IC] Azura Callaghan mówi: W erze internetów i cyberprzestępczości nikt nie musi Cię wrzucać do VAN'a.. Racja, czas kończyć z tym burdelem.
+[2.02.2025 22:38:48] [Akcja /do] * Rękawiczki Alejandro uległy zniszczeniu (( Nieznajomy Z3U5 ))
+[2.02.2025 22:38:41] [Czat IC] Nieznajomy WDEP mówi: To tyle.
+[2.02.2025 22:38:32] [Czat IC] Elijah Croxley mówi: Chodziło o to, że nikt nie wrzuci Cię do wozu po wyjściu z pracy i zacznie więźić - popierzeńców w LS nie brakuje, słowo. Yeah, zwijajmy stąd - świeci tu pustkami.
+[2.02.2025 22:38:31] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Dobra, powoli wypuszczamy ludzi. **
+[2.02.2025 22:38:27] [Akcja /do] ** Nie przeszedł przez drzwi. (( Nieznajomy WDEP ))
+[2.02.2025 22:37:40] [Akcja /me] * Teresa Navabi nie dała dokończyć słów A. Sanders, odeszła od razu niczym była obrażona.
+[2.02.2025 22:37:35] [Czat IC] Azura Callaghan mówi: Nie wiem, gdzie pojawia się moment bezpieczeństwa w pokazywaniu dupska przez internet.. Ale whatever, nie mi to oceniać, poważnie. Zwijamy stąd? Czysto?
+[2.02.2025 22:37:33] [Czat IC] Archie Sanders mówi: Yes, Supervisory. Skupiłem sie na tych cywilach. Słucham co do siebie mówią. Przysłuchałem się też dośc mocno wymiany zdań deputy. Cóż mogę powiedzieć więcej. Trzeba to omówić w cztery oczy.
+[2.02.2025 22:37:25] [Akcja /do] * Rękawiczki Fabien uległy zniszczeniu (( Nieznajomy ERLYW ))
+[2.02.2025 22:37:14] [Akcja /me] ** Nieznajomy Z3U5 zakłada rękawiczki.
+[2.02.2025 22:37:03] [Akcja /do] * Rękawiczki Alejandro uległy zniszczeniu (( Nieznajomy Z3U5 ))
+[2.02.2025 22:36:51] [Czat IC] ** [Kanał: 782] Cassian Zeke: Ktoś z feds zabrał go. **
+[2.02.2025 22:36:34] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Gdzie jest Ilarion Perseus, SEB? Przejmiemy go. **
+[2.02.2025 22:36:34] [Akcja /me] ** Nieznajomy ERLYW zakłada rękawiczki.
+[2.02.2025 22:36:31] [Czat IC] Elijah Croxley mówi: Yeah, coś w tym jest - mimo wszystko, bezpieczeństwo na pewno jest wyższe - brak kontaktu na wyciągniecie ręki z klientem zapewnia chociaż minimum pewności - że jesteś bezpieczna w tym gównie. Chociaż - w czasach takiej ilości popieprzonych stalkerów, to bezpieczeństwo wydaje się być złudne.
+[2.02.2025 22:36:21] [Czat IC] Nieznajomy Z3U5 mówi: Yeah.. same rzeczy do /pracy/, buahaha.
+[2.02.2025 22:35:58] [Czat IC] Nieznajomy ERLYW mówi: Nic ciekawego tutaj nie widzę, powaga.
+[2.02.2025 22:35:49] [Czat IC] Nieznajomy Z3U5 mówi: Yeah.. od zajebania tego tu jest.
+[2.02.2025 22:35:28] [Czat IC] Archie Sanders mówi: Special Agents Sanders.
+[2.02.2025 22:35:23] [Czat IC] Nieznajomy ERLYW mówi: Ale przebieranek mają tutaj, co?
+[2.02.2025 22:35:20] [Czat IC] Azura Callaghan mówi: Coś Ty - w internecie nie ma tej.. Wiesz, adrealiny? Yeah, tak mi się wydaję. Innych powodów nie widzę.. No i nie każdy chce odpisywać zjebom z internetu, większość idiotów z internetu nie miałaby jaj by tu przyjść, nie?
+[2.02.2025 22:34:15] [Komenda] /id brou
+[2.02.2025 22:34:12] [Czat IC] Elijah Croxley mówi: Jest popyt, jest podaż - dziwie się że kobiety jeszcze decydują się na taki sposób zarobku. Myślałem że sprzedaż ciała przejdzie całkiem w internet.
+[2.02.2025 22:33:56] [Komenda] .ramionam
+[2.02.2025 22:33:35] [Czat IC] Audycja Daily Globe: [..]opublikowany w ciągu miesiąca, ale pełne śledztwo może potrwać ponad rok. Eksperci spekulują, że błędy proceduralne mogły przyczynić się do katastrofy. Black Hawk nie znajdował się na swojej trasie, kontroler ruchu był przeciążony obowiązkami, a śmigłowiec wykonywał nietypową misję..
+[2.02.2025 22:33:26] [Czat IC] Azura Callaghan mówi: Ta - żywy towar, yeah.. Masakra.
+[2.02.2025 22:33:21] [Czat OOC] (( Elijah Croxley (173): A myslalem ze tam nic nie ma za drzwiami xd. ))
+[2.02.2025 22:33:11] [Komenda] /re :o
+[2.02.2025 22:33:11] [PW] [Nieznajomy BL8A &#8594; Nieznajomy WDEP (70)]: :o.
+[2.02.2025 22:33:04] [Czat IC] Teresa Navabi mówi: Coś udało się pozyskać dla biura?
+[2.02.2025 22:32:59] [Komenda] .siad
+[2.02.2025 22:32:57] [PW] [Nieznajomy WDEP &#8594; Nieznajomy BL8A (597)]: .siad.
+[2.02.2025 22:32:57] [Czat IC] Elijah Croxley mówi: Właściciel tego miejsca mógł oglądać towar w akcji.
+[2.02.2025 22:32:53] [Czat IC] Sadie Blythe mówi: Wpadłam tylko pomóc.
+[2.02.2025 22:32:51] [PW] [Nieznajomy WDEP &#8594; Nieznajomy BL8A (597)]: A nimka.
+[2.02.2025 22:32:48] [Komenda] /w 70 kturym
+[2.02.2025 22:32:48] [PW] [Nieznajomy BL8A &#8594; Nieznajomy WDEP (70)]: Kturym.
+[2.02.2025 22:32:46] [Czat IC] ** [Kanał: 782] Blake Dawson: SEB pomożemy wam. **
+[2.02.2025 22:32:45] [Akcja /me] * Azura Callaghan przetrzepała poduszki, fotele, rozglądając się z okna na klub.
+[2.02.2025 22:32:45] [Czat IC] Teresa Navabi mówi: Ale Ty.. jak zawsze doskonała.
+[2.02.2025 22:32:43] [Komenda] /w 70 kurwaa
+[2.02.2025 22:32:43] [PW] [Nieznajomy BL8A &#8594; Nieznajomy WDEP (70)]: Kurwaa.
+[2.02.2025 22:32:35] [Czat IC] Teresa Navabi mówi: Hej Sadie.. hierarchia tu widzę nie obowiązuje, ten wychodzi, ten nic nie mówi - mają szczęscie, że w ostatnim czasie byłam zajęta poprzez spotkania w Waszyngtonie.
+[2.02.2025 22:32:32] [Czat IC] Elijah Croxley mówi: Drzwi, w środku mały pokój - pusto.
+[2.02.2025 22:32:27] [Czat IC] Philip Frost krzyczy: CO TY ODJEBAŁEŚ!
+[2.02.2025 22:32:27] [Czat IC] Azura Callaghan mówi: Shh.. Piękny kadr, co?
+[2.02.2025 22:32:24] [Czat IC] Philip Frost krzyczy: PATT!
+[2.02.2025 22:32:21] [Czat IC] Bernard Patton krzyczy: PHIL!
+[2.02.2025 22:32:11] [Czat IC] Bernard Patton mówi: JESTEM TUTAJ LEGALNIE.
+[2.02.2025 22:32:10] [Czat IC] Sadie Blythe mówi: Cześć Teresa.
+[2.02.2025 22:32:09] [Akcja /me] * Nieznajomy OAW1 chwycił za ramie B.Patton.
+[2.02.2025 22:32:06] [Akcja /me] * Lincoln Walsh zaczął przeszukiwać dokładnie łazienkę, odpalił latarkę świecąc po zakamarkach.
+[2.02.2025 22:32:06] [Czat IC] Bernard Patton mówi: KURWA.
+[2.02.2025 22:32:02] [Akcja /do] ** Gdzie ewentualnie znajdują się dokumenty kobiety? (( Nieznajomy JCZAK ))
+[2.02.2025 22:31:59] [Czat IC] ** [Kanał: 782] Barry Kerekes: 327, wychodzę na chwilę na zewnątrz. **
+[2.02.2025 22:31:44] [Akcja /me] * Barry Kerekes pokiwał twierdząco, zerknął na Patton do tyłu.
+[2.02.2025 22:31:43] [Czat IC] Bernard Patton mówi: GADAM TYLKO.
+[2.02.2025 22:31:43] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Wolni Sheriffs, przeszukujemy wnętrze. **
+[2.02.2025 22:31:43] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Wolni Sheriffs, przeszukujemy wnętrze.
+[2.02.2025 22:31:41] [Czat IC] Jack Strauser mówi: Oddajcie mi tego operatora co mnie macał, on jako jedyny mnie słuchał jak coś mówiłem. *odwrócił się do zbiorowiska za nim*.
+[2.02.2025 22:31:40] [Czat IC] Bernard Patton mówi: No kurwa.
+[2.02.2025 22:31:31] [Akcja /do] ** Naturalnie znalazła starannie zwinęty woreczek z pokruszoną ilością i upchnięty pod piersią. (( Lauren Devaughn ))
+[2.02.2025 22:31:25] [Akcja /me] ** Nieznajomy JCZAK zabiera przedmiot "SEX HAZE" graczowi Lauren Devaughn.
+[2.02.2025 22:31:22] [Czat IC] Nieznajomy OAW1 mówi: Dobra, mam to.
+[2.02.2025 22:31:21] [Akcja /me] * Jack Strauser westchnął głośniej.
+[2.02.2025 22:31:16] [Czat IC] Sadie Blythe mówi: Patton.. to był ten.
+[2.02.2025 22:31:13] [Czat IC] Barry Kerekes mówi: A co z resztą?
+[2.02.2025 22:31:06] [Czat IC] Lincoln Walsh mówi: Niech się tłumaczy w biurze ze swojego pobytu.
+[2.02.2025 22:31:04] [Akcja /me] * Nieznajomy JCZAK podeszła bliżej kobiety, zaczęła dokładnie przeszukiwać ją, włożyła dłoń we wspomniane miejsce by wyjąć marihuane.
+[2.02.2025 22:31:00] [Komenda] /a
+[2.02.2025 22:30:57] [Czat IC] Lincoln Walsh mówi: To zabierzcie tego co jest tu rzekomo legalnie, ICE.
+[2.02.2025 22:30:45] [Komenda] /a
+[2.02.2025 22:30:42] [Czat IC] Sadie Blythe mówi: Nie było nikogo z imigracji, jedna osoba tylko jest, ale legalnie.
+[2.02.2025 22:30:37] [Komenda] /w 202 Elo
+[2.02.2025 22:30:28] [Komenda] /id Brou
+[2.02.2025 22:30:21] [Czat IC] Lauren Devaughn mówi: Nic wartościowego, marihuanę. Względnie małą ilość.
+[2.02.2025 22:30:20] [Akcja /me] * Jack Strauser obrócił się.
+[2.02.2025 22:30:19] [Czat IC] Jack Strauser mówi: Właśnie.
+[2.02.2025 22:30:12] [Czat IC] Jack Strauser mówi: Otóż to.
+[2.02.2025 22:30:03] [Czat IC] Nieznajomy JCZAK mówi: Co tam chowasz dokładnie?
+[2.02.2025 22:29:49] [Akcja /me] * Kaia Musaeva wierci sie na boki.
+[2.02.2025 22:29:32] [Akcja /me] * Estrella Fedossova stoi zestresowana, boi sie na sama mysl biura federalnego /od srodka/.
+[2.02.2025 22:29:32] [Czat IC] Luna Haru mówi: Napięta nie, bardziej zmieszana sytuacją.
+[2.02.2025 22:29:25] [Czat IC] Amelia Lopez mówi: Ciekawe kto się sprzedał.
+[2.02.2025 22:29:20] [Akcja /do] * Telefon zaczyna dzwonić w kieszeni. (( Nieznajomy ERLYW ))
+[2.02.2025 22:29:13] [Czat IC] Nieznajomy OAW1 mówi: Ilu macie imigrantów?
+[2.02.2025 22:28:50] [Czat IC] Jack Strauser mówi: Jak nic nie przeskrobałaś to chyba wywalone jajca *wrócił do bujania się jak dziecko z chorobą sierocą*.
+[2.02.2025 22:28:29] [Czat IC] Luna Haru mówi: Dzięki ale w obecnej sytuacji to chyba mnie najmniej interesuje.
+[2.02.2025 22:28:15] [Czat IC] Audycja Daily Globe: [..]ostatnich lat doszło do wielu incydentów podczas operacji szkoleniowych, co stawia pytania o procedury bezpieczeństwa. Federalna Administracja Lotnictwa i Narodowa Rada Bezpieczeństwa Transportu analizują, czy kontroler ruchu mógł zapobiec wypadkowi. Raport wstępny ma zostać [...]
+[2.02.2025 22:28:15] [Czat IC] Jack Strauser mówi: Eeej! Ładna cera i buźka!
+[2.02.2025 22:28:05] [Akcja /me] * Jack Strauser spojrzał na Lunę.
+[2.02.2025 22:27:53] [Czat IC] Jack Strauser mówi: Tak, musi mi zrobić usta usta.
+[2.02.2025 22:27:49] [Czat IC] Nieznajomy WDEP mówi: Są kobiety od was też.
+[2.02.2025 22:27:48] [Czat IC] Azura Callaghan mówi: Nie, stoisz gdzie jesteś.
+[2.02.2025 22:27:47] [Czat IC] Nieznajomy ERLYW mówi: Nie widzę.
+[2.02.2025 22:27:47] [Czat OOC] (( Lilianna Anderson (628): To logam  miłej nocy. ))
+[2.02.2025 22:27:46] [Czat IC] Nieznajomy BL8A mówi: Od nas mamy chyba tylko jedną Ma'am.
+[2.02.2025 22:27:46] [Akcja /me] * Nieznajomy ERLYW rozjerzał się.
+[2.02.2025 22:27:43] [Czat IC] Nieznajomy ERLYW mówi: A dobra, macie jedną na dole od nas - więcej chyba..
+[2.02.2025 22:27:43] [Czat IC] Estrella Fedossova mówi: On zartowal, prawda?
+[2.02.2025 22:27:30] [Akcja /do] * Telefon zaczyna dzwonić w kieszeni. (( Lauren Devaughn ))
+[2.02.2025 22:27:28] [Czat OOC] (( Lincoln Walsh (46): Mozesz leciec, wobec ciebie nie bedziemy grac nic. ))
+[2.02.2025 22:27:27] [Czat OOC] (( Susan Miles (346): Dzięki za giere. Buziaczki. ))
+[2.02.2025 22:27:21] [Czat IC] Jack Strauser mówi: Wait, gdzie mój kochaś? *rozejrzał się*.
+[2.02.2025 22:27:17] [Czat IC] Nieznajomy ERLYW mówi: Yeah, daj chwilę.
+[2.02.2025 22:27:16] [Czat OOC] (( Lilianna Anderson (628): Ile to potrwa? jeszcze bo pilnie lecieć muszę T~T. ))
+[2.02.2025 22:27:12] [Akcja /me] * Barry Kerekes mlaska szukając takowej wśród deputies.
+[2.02.2025 22:27:11] [Czat IC] Estrella Fedossova mówi: Zartujesz..?!
+[2.02.2025 22:27:06] [Czat IC] ** [Kanał: 782] Blake Dawson: Miał na sobie berretę. **
+[2.02.2025 22:27:05] [Czat IC] Estrella Fedossova mówi: Wsadz mi plastik do kieszeni.. I przepros.
+[2.02.2025 22:27:02] [Czat IC] Barry Kerekes mówi: Mamy w ogóle jakieś kobiety na scenie? Potrzebujemy kogoś do przeszukania.
+[2.02.2025 22:27:01] [Czat IC] ** [Kanał: 782] Blake Dawson: Na pewno jedna osoba z tyłu klubu miała, o ile dobrze pamiętam to właściciel. **
+[2.02.2025 22:26:59] [Czat IC] ** [Kanał: 782] Yasmin Kennedy: Cztery osoby od końca, clear. **
+[2.02.2025 22:26:59] [Czat IC] Yasmin Kennedy mówi (krótkofalówka): Cztery osoby od końca, clear.
+[2.02.2025 22:26:56] [Czat IC] Jack Strauser mówi: To już bardziej były zorganizowane agencje przy WTC w chaosie.
+[2.02.2025 22:26:49] [Akcja /me] * Estrella Fedossova zasmiala sie glosniej.
+[2.02.2025 22:26:45] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Kto miał broń, lub dragi? **
+[2.02.2025 22:26:45] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Kto miał broń, lub dragi?
+[2.02.2025 22:26:37] [Czat IC] Lincoln Walsh mówi: Zwracamy im plastiki.
+[2.02.2025 22:26:36] [Akcja /me] * Estrella Fedossova odsunela sie od Philip Frost.
+[2.02.2025 22:26:32] [Czat IC] Lincoln Walsh mówi: Dobra, a więc tak.
+[2.02.2025 22:26:30] [Akcja /me] * Barry Kerekes skinął na dwójkę agentów po swojej prawej, odbił rozglądając się po klubie.
+[2.02.2025 22:26:24] [Czat IC] Lincoln Walsh mówi: Cool.
+[2.02.2025 22:26:21] [Czat IC] Yasmin Kennedy mówi: Yeahh spisane.t.
+[2.02.2025 22:26:12] [Czat IC] Lincoln Walsh mówi: Dane macie?
+[2.02.2025 22:26:10] [Akcja /me] * Lincoln Walsh wskazał na ludzi na końcu.
+[2.02.2025 22:26:07] [Czat IC] Yasmin Kennedy mówi: Już sprawdzeni byli.
+[2.02.2025 22:25:57] [Czat IC] Lincoln Walsh mówi: Tych ktoś sprawdzał?
+[2.02.2025 22:25:55] [Akcja /me] * Azura Callaghan skina na prawą stronę sceny.
+[2.02.2025 22:25:49] [Czat IC] Azura Callaghan mówi: Co z resztą - sprawdzaliście ich?
+[2.02.2025 22:25:44] [Czat IC] Estrella Fedossova mówi: Jestem tylko w odwiedzinach..?
+[2.02.2025 22:25:44] [Akcja /me] * Jack Strauser westchnął i rozejrzał się za znajomymi twarzami z Sherrifs, aby móc ich powkurzać jak zawsze.
+[2.02.2025 22:25:42] [Czat IC] Sadie Blythe mówi: Frost, brak wpisów, osiemdziesiąty pierwszy rocznik, obywatel.
+[2.02.2025 22:25:38] [Czat IC] Barry Kerekes mówi: Przykry widok, cóż.
+[2.02.2025 22:25:22] [Czat IC] Lincoln Walsh mówi: Coraz więcej argumentów do nakazu o zlikwidowanie tego.
+[2.02.2025 22:25:07] [Czat IC] Sadie Blythe mówi: Ciekawe.
+[2.02.2025 22:25:04] [Czat IC] Estrella Fedossova mówi: Mowilam..? Mowilam..?!
+[2.02.2025 22:24:59] [Czat IC] Lincoln Walsh mówi: Osiemnaście lat i w klubie ze striptizem?
+[2.02.2025 22:24:52] [Czat IC] Sadie Blythe mówi: Osiemnaście lat, zero wpisów, obywatelka - ta Estrella.
+[2.02.2025 22:24:48] [Czat IC] Yasmin Kennedy mówi: Yeah.
+[2.02.2025 22:24:48] [Czat IC] Azura Callaghan mówi: Nie, zaraz kończymy, luz.
+[2.02.2025 22:24:37] [Akcja /me] * Azura Callaghan chwyciła za barki K. Musaeva, przesunęła ją do B. Patton.
+[2.02.2025 22:24:32] [Czat IC] Davon Sears mówi: Yup.
+[2.02.2025 22:24:24] [Czat IC] Barry Kerekes mówi: Tutaj wszyscy skończeni?
+[2.02.2025 22:24:17] [Akcja /me] * Lincoln Walsh podyktował dane z dokumentów.
+[2.02.2025 22:24:16] [Czat IC] Barry Kerekes mówi: Cóż, wizerunek na pierwszym miejscu..
+[2.02.2025 22:24:15] [Czat IC] Sadie Blythe mówi: Dobra, daj chwilę.
+[2.02.2025 22:24:15] [Czat IC] Jack Strauser mówi: Jaa pierdolę. *westchnął ciężko*.
+[2.02.2025 22:24:11] [Czat IC] Azura Callaghan mówi: W porządku..
+[2.02.2025 22:24:10] [Czat IC] Lincoln Walsh mówi: Estrella Fedossova oraz Philip Frost.
+[2.02.2025 22:24:02] [Akcja /me] * Barry Kerekes mlaska kilka razy, kręci głową na boki.
+[2.02.2025 22:24:00] [Czat IC] Sadie Blythe mówi: Ona już była sprawdzana.
+[2.02.2025 22:23:49] [Czat IC] Lauren Devaughn mówi: Yeah, w pełni. Nie pozwolę, by dotykał mnie facet - To zniszczy moją perspektywę.
+[2.02.2025 22:23:48] [Komenda] .ramionam
+[2.02.2025 22:23:46] [Czat IC] Estrella Fedossova mówi: Odpieprz sie od mojej gotowki..!
+[2.02.2025 22:23:29] [Akcja /me] * Lincoln Walsh odebrał dokumenty od zamaskowanej koleżanki.
+[2.02.2025 22:23:25] [Czat IC] Barry Kerekes mówi: Przywilej przeszukania przez kobietę wykorzystywany w pełni, co? Zaraz ktoś się zjawi.
+[2.02.2025 22:23:25] [Czat IC] Audycja Daily Globe: Po zderzeniu wraki obu maszyn spadły do lodowatej rzeki Potomak. Akcja ratunkowa rozpoczęła się natychmiast, ale nikt nie przeżył. Śledczy badają nagrania rozmów z wieży kontrolnej i czarne skrzynki obu maszyn. Wypadek ten to kolejna tragedia z udziałem wojskowych śmigłowców w USA. W ciągu[..]
+[2.02.2025 22:23:22] [Akcja /me] * Lauren Devaughn rzuciła okiem po Barry, wyszczerzyła się.
+[2.02.2025 22:23:14] [Akcja /me] * Azura Callaghan przytaknęła do siebie, wcisnęła spowrotem dokumenty faceta w jego keiszeń, przesunęła L. Haru, szarpiąc za jej ramię, dołączając zaraz do niej B. Patton, dociskając obie osoby do lewej.
+[2.02.2025 22:23:07] [Czat IC] Bernard Patton krzyczy: PHIL NIC NIE MÓW I CZEKAJ NA ADWOKATA!
+[2.02.2025 22:23:04] [Czat IC] Jack Strauser mówi: Ja mogę ją przeszukać dla was.
+[2.02.2025 22:23:01] [Czat IC] ** [Kanał: 782] Cassian Zeke: Udam się na góre. **
+[2.02.2025 22:23:01] [Czat IC] Cassian Zeke mówi (krótkofalówka): Udam się na góre.
+[2.02.2025 22:22:52] [Czat IC] Ivan Sergeyev mówi: Jest mi niezmiernie przykro ma'am.
+[2.02.2025 22:22:51] [Akcja /me] * Barry Kerekes przygląda się Lauren, kręci głową, lekko fuknął.
+[2.02.2025 22:22:46] [Akcja /me] * Nieznajomy JCZAK zgarnęła dokumenty kobiety, przyjrzała się im dokładnie by wystawić je w strone Walsha, by ten mógł spisać jej dane.
+[2.02.2025 22:22:40] [Czat IC] Bernard Patton mówi: Japierdole.
+[2.02.2025 22:22:37] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Dzięki, możesz obserwować perymetr. **
+[2.02.2025 22:22:37] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Dzięki, możesz obserwować perymetr.
+[2.02.2025 22:22:30] [Czat IC] ** [Kanał: 782] Jonathan Carrington: Yeah, puściłem go już. **
+[2.02.2025 22:22:29] [Akcja /me] * Jack Strauser spojrzał znudzony w sufit, zaczął się bujać jak dziecko z ADHD do przodu i tyłu.
+[2.02.2025 22:22:26] [Czat IC] Azura Callaghan mówi: W porządku.. Niech będzie.
+[2.02.2025 22:22:19] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Możesz go wypuścić. **
+[2.02.2025 22:22:18] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Możesz go wypuścić.
+[2.02.2025 22:22:04] [Czat IC] ** [Kanał: 782] Jonathan Carrington: Jak sytuacja w środku? Przed klubem, czysto - sprawdziłem poprzednią osobę, która została złapana na wejściu przez SEB. Paul Moreau spisany w notes. **
+[2.02.2025 22:22:02] [Czat IC] Sadie Blythe mówi: Patton, dziwiąty stycznia, osiemdziesiąty pierwszy - brak wpisów, legalny imigrant.
+[2.02.2025 22:21:35] [Akcja /me] * Barry Kerekes przesuwa po tym Luna do reszty sprawdzonych osób.
+[2.02.2025 22:21:20] [Akcja /me] * Lincoln Walsh sprawdził jego dokument, zapisał dane.
+[2.02.2025 22:21:18] [Czat IC] Sadie Blythe mówi: Już.. czekaj.
+[2.02.2025 22:21:13] [Czat IC] Azura Callaghan mówi: Blythe - sprawdź dla mnie.. Bernard Patton.
+[2.02.2025 22:21:13] [Akcja /me] * Sadie Blythe przyłożyła dłoń do barku Susan Miles i przesunęła ją na swoje lewo, obok Jack Strausser.
+[2.02.2025 22:21:06] [Akcja /do] ** Naturalnie w kieszeni kangur, razem z wieksza iloscia gotowki. (( Estrella Fedossova ))
+[2.02.2025 22:21:01] [Akcja /do] ** Mogła znaleźć jakieś dokumenty? Jeśli tak to gdzie dokładnie? (( Nieznajomy JCZAK ))
+[2.02.2025 22:21:00] [Czat IC] Lincoln Walsh mówi: Blah, blah.
+[2.02.2025 22:20:59] [Akcja /me] * Barry Kerekes zapisuje datę urodzenia obok nazwiska, skinął na Blythe.
+[2.02.2025 22:20:56] [Czat IC] Philip Frost mówi: Jesteś chyba ciepły, co?
+[2.02.2025 22:20:48] [Czat IC] Nieznajomy ERLYW szepcze: Hahahaha.
+[2.02.2025 22:20:44] [Komenda] /c Nie szperaj po barze - a jak już bierzesz to bierz drogie.
+[2.02.2025 22:20:44] [Czat IC] Nieznajomy BL8A szepcze: Nie szperaj po barze - a jak już bierzesz to bierz drogie.
+[2.02.2025 22:20:13] [Akcja /me] * Lincoln Walsh podszedł do P.Frost, zaczął go przeszukiwać po ciele, nie pominął miejsc intymnych.
+[2.02.2025 22:20:13] [Czat IC] Estrella Fedossova mówi: Tylko ostroznie, OK?
+[2.02.2025 22:20:11] [Akcja /me] * Yasmin Kennedy wyciągnęłą z kieszeni nitryle i założyła je na dłonie, sięgnęła za jeden plastik i spisała dane.
+[2.02.2025 22:20:05] [Akcja /me] * Sadie Blythe dodała kolejny raz do Susan Miles.
+[2.02.2025 22:20:04] [Akcja /do] * Otrzymano SMS. (( Luna Haru ))
+[2.02.2025 22:20:02] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Amelia Lopez, Susan Miles spisane do notatnika. **
+[2.02.2025 22:20:02] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Amelia Lopez, Susan Miles spisane do notatnika.
+[2.02.2025 22:19:56] [Czat IC] Nieznajomy JCZAK mówi: Mam to.
+[2.02.2025 22:19:55] [Czat IC] Sadie Blythe mówi: Przejdź w lewo, proszę.
+[2.02.2025 22:19:54] [Czat IC] Lincoln Walsh mówi: Weź od razu jej plastik.
+[2.02.2025 22:19:51] [Akcja /me] * Lincoln Walsh wskazał na E.Fedssova.
+[2.02.2025 22:19:47] [Komenda] .pas2
+[2.02.2025 22:19:47] [Akcja /me] * Azura Callaghan nalłozyła na nitryle dłonie, zaczęła oklepywać B. Patton, szukając jego dokumentów oraz ewentualnych przedmiotów.
+[2.02.2025 22:19:43] [Czat IC] Bernard Patton mówi: Mam latarkę i legitymacje w kieszeni.
+[2.02.2025 22:19:38] [Czat IC] Lilianna Anderson mówi: Kieszeń z tyłu spodni.
+[2.02.2025 22:19:35] [Akcja /me] * Nieznajomy JCZAK wskazała na Musaeva, spojrzała na Walsh'a.
+[2.02.2025 22:19:32] [Czat IC] Lincoln Walsh mówi: Daj nam dokończyć czynności.
+[2.02.2025 22:19:22] [Czat IC] Kaia Musaeva mówi: Bo sie zaraz tu zleje.
+[2.02.2025 22:19:20] [Czat IC] Azura Callaghan mówi: Gdzie masz dokumenty? Coś masz przy sobie, ostrego, cokolwiek?
+[2.02.2025 22:19:19] [Czat IC] Barry Kerekes mówi: Data urodzenia?
+[2.02.2025 22:19:15] [Akcja /me] * Barry Kerekes wyciąga drobny notesik z długopisem, otwiera go spisując dane Luna.
+[2.02.2025 22:19:14] [Czat IC] Lincoln Walsh mówi: Weź przeszukaj tę laskę.
+[2.02.2025 22:19:12] [Czat IC] Susan Miles mówi: Teraz aktorka co musi siku, oj.
+[2.02.2025 22:19:05] [Czat IC] Audycja Daily Globe: Pilota śmigłowca, kapitan Rebeccę Lobach, ostrzegano dwukrotnie o obecności samolotu pasażerskiego. Możliwe, że w zatłoczonej przestrzeni powietrznej nie dostrzegła CRJ-700 na czas, by uniknąć kolizji.
+[2.02.2025 22:18:54] [Czat IC] Lincoln Walsh mówi: Dobra, przechodzę dalej.
+[2.02.2025 22:18:47] [Czat IC] Barry Kerekes mówi: Podaj swoje dane.
+[2.02.2025 22:18:38] [Czat IC] Estrella Fedossova mówi: Korzysta z poprawki, glabie..!
+[2.02.2025 22:18:38] [Czat IC] Jack Strauser mówi: Reszta by już mi przyjebała kolbą po plecach.
+[2.02.2025 22:18:29] [Czat IC] Jack Strauser mówi: Ej lubię go! *spojrzał na operatora* Serio.
+[2.02.2025 22:18:29] [Czat IC] Bernard Patton mówi: Zgodnie z prawem międzynarodowym musicie nam dać skorzystać z toalety.
+[2.02.2025 22:18:26] [Akcja /me] * Lauren Devaughn nadal oczekuję na kobietę do przeszukania.
+[2.02.2025 22:18:23] [Akcja /me] * Lincoln Walsh zapisał sobie w notesie dane obu kobiet.
+[2.02.2025 22:18:15] [Czat IC] Estrella Fedossova mówi: Slyszysz..?! Chyba jej nie zabronisz..
+[2.02.2025 22:18:13] [Czat IC] Ivan Sergeyev mówi: Stary, nie twoja liga.
+[2.02.2025 22:18:12] [Czat IC] Barry Kerekes mówi: Gdzie masz swoje ID? Masz na sobie jakieś przedmioty - igły, noże, inne temu podobne?
+[2.02.2025 22:18:12] [Czat IC] Bernard Patton mówi: Ja tak samo.
+[2.02.2025 22:18:08] [Czat IC] Sadie Blythe mówi: Lopez to samo, dwunsty grudnia dwa tysiące dwa, obywatel, brak wpisów.
+[2.02.2025 22:18:02] [Akcja /me] * Estrella Fedossova odwrocila sie glowa do Malone.
+[2.02.2025 22:17:51] [Akcja /me] * Gonzalo Calles po swoich słowach lekko pociągnął za smycz.
+[2.02.2025 22:17:49] [Czat IC] Kaia Musaeva mówi: Siku chce do kurwy nedzy.
+[2.02.2025 22:17:47] [Akcja /me] * Barry Kerekes podchodzi do Luna Haru, mlaska krótko.
+[2.02.2025 22:17:39] [Czat IC] Gonzalo Calles mówi: Hahah! Jedna Ty to Frank umiesz.. Dobry pies! Idziemy do krążownika - okay?
+[2.02.2025 22:17:39] [Akcja /me] * Lincoln Walsh skinął na Susan Miles.
+[2.02.2025 22:17:35] [Akcja /me] ** Selena Sinclaire patrzy na Dowód osobisty (ID Card).
+[2.02.2025 22:17:34] [Czat IC] Lincoln Walsh mówi: Na tej pani.
+[2.02.2025 22:17:34] [Czat IC] Sadie Blythe mówi: Susan Miles, brak wpisów, data urodzenia 24 czerwca dwa tysiące sześć.. Los Angeles. Obywatelka.
+[2.02.2025 22:17:34] [Czat IC] Cassian Zeke mówi: Dziś było cicho. To lepiej.
+[2.02.2025 22:17:33] [Czat IC] Holden Ashford mówi: Szkoda, że czterdziestki nie było na co używać.
+[2.02.2025 22:17:28] [Akcja /me] * Jack Strauser zaśmiał się i przytaknął.
+[2.02.2025 22:17:22] [Akcja /me] ** Nieznajomy HCZTG zbadał broń o nazwie "[LEA] HK416".
+[2.02.2025 22:17:02] [Akcja /me] * K-9 Frank momentalnie, gdy handler wydał smaczki ten się na nie rzucił - złapał za nie w psyk i zjadł; Wbił wzrok na opiekuna pochylając głowę w bok, a przy ruszył za piłeczką, po chwili z nią wrócił w pysku do opiekuna i usiadł atakując ją łapami.
+[2.02.2025 22:17:00] [Komenda] .pas2
+[2.02.2025 22:16:54] [Czat IC] Ivan Sergeyev mówi: Już po sprawie.
+[2.02.2025 22:16:54] [Czat IC] Nieznajomy BL8A mówi: Panowie, jesteśmy na akcji - dajcie z tym spokój i skupmy się kurwa na robocie; koło chuja mi lata ten Broussard; jebcie go po robocie jak jest problem.
+[2.02.2025 22:16:53] [Czat IC] Sadie Blythe mówi: Dobra, daj chwilę.
+[2.02.2025 22:16:50] [Czat IC] Lincoln Walsh mówi: Sprawdź mi je.
+[2.02.2025 22:16:47] [Czat IC] Lincoln Walsh mówi: Susan Miles, Amelia Lopez.
+[2.02.2025 22:16:45] [Czat IC] Blake Dawson mówi: No i ładnie.
+[2.02.2025 22:16:42] [Akcja /me] * Gonzalo Calles zrzucił z głowy hełm, przyczepił go do PC.
+[2.02.2025 22:16:40] [Akcja /me] * Lincoln Walsh wyciągnął dokument z jej kieszeni, zaraz to odwrócił się do S.Blythe.
+[2.02.2025 22:16:40] [Akcja /me] * Azura Callaghan wysunęła do L. Walsh dłoń po plastik kobiety.
+[2.02.2025 22:16:39] [Czat IC] Nieznajomy JCZAK mówi: Myśli że jest pieprzonym detektywem czy coś, zamiast ogarniać swoich ludzi w terenie.
+[2.02.2025 22:16:37] [Czat IC] Blake Dawson mówi: Sory.
+[2.02.2025 22:16:20] [Akcja /do] ** Gdzie były? (( Lincoln Walsh ))
+[2.02.2025 22:16:17] [Czat IC] Nieznajomy WDEP mówi: Kolejny sierżant co ma ego wyjebane wcześniej jeden z miejskiej.
+[2.02.2025 22:16:09] [Akcja /do] ** Mógł znaleźć przy niej dokumenty? (( Lincoln Walsh ))
+[2.02.2025 22:16:03] [Akcja /do] ** Marichuanę znalazł w ilości trzech gram, zwiniętą już w Jointy, wsadzone do paczki fajek. (( Jack Strauser ))
+[2.02.2025 22:16:00] [Akcja /me] * Lincoln Walsh podszedł do S.Miles, zaczął wykonywać na niej pat-down szukając dokumentów. Ominął miejsca intymne.
+[2.02.2025 22:15:58] [Czat IC] Nieznajomy JCZAK mówi: Sierżant patrolu nie wykonuje swoich zasranych obowiązków.
+[2.02.2025 22:15:50] [Czat IC] Audycja Daily Globe: Podobne misje były realizowane w przeszłości, w tym po atakach 11 września 2001 roku, gdy ewakuowano kierownictwo Departamentu Obrony. Tego wieczoru Black Hawk nie wykonywał standardowej operacji szkoleniowej.
+[2.02.2025 22:15:47] [Czat IC] Lauren Devaughn mówi: Poproszę kobietę do przeszukania.
+[2.02.2025 22:15:47] [Akcja /do] ** Gdzie mógł znaleźć narkotyki i w jakiej ilosci? (( Ivan Sergeyev ))
+[2.02.2025 22:15:43] [Akcja /me] * Gonzalo Calles zaczął prowadzić psa do góry, następnie przy barze wyciągnął z poucha kilka smaczków, podał mu je z radością. Gdy Frank zjadł smaczki, rzucił piłeczke, aby się pobawił w nagrode.
+[2.02.2025 22:15:42] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Spisujcie wszystkich do notesu. **
+[2.02.2025 22:15:42] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Spisujcie wszystkich do notesu.
+[2.02.2025 22:15:42] [Czat IC] Nieznajomy Z3U5 mówi: Jebany debil.
+[2.02.2025 22:15:41] [Czat IC] Nieznajomy HCZTG mówi: No spierdalaj.
+[2.02.2025 22:15:36] [Czat IC] Lincoln Walsh mówi: Tak, robimy to.
+[2.02.2025 22:15:36] [Czat IC] Elijah Croxley mówi: Tutaj to samo, pies coś na niej złapał - neich ktoś ją sprawdzi.
+[2.02.2025 22:15:33] [Czat IC] Leland Broussard mówi: Tyle w temacie.
+[2.02.2025 22:15:33] [Czat IC] ** [Kanał: 782] Lincoln Walsh: FBI, zabieramy się teraz za sprawdzanie dokumentów. **
+[2.02.2025 22:15:33] [Czat IC] Lincoln Walsh mówi (krótkofalówka): FBI, zabieramy się teraz za sprawdzanie dokumentów.
+[2.02.2025 22:15:31] [Czat IC] Leland Broussard mówi: To samo, jeśli Wy macie problem, zapraszam do kapitana Vickersa.
+[2.02.2025 22:15:30] [Akcja /me] * Nieznajomy JCZAK wystawiła dłonie w strone Broussadra tak by mógł ją zakuć.
+[2.02.2025 22:15:23] [Akcja /me] * Ivan Sergeyev zaczął przeszukiwać mężczyzne.
+[2.02.2025 22:15:23] [Akcja /me] * Elijah Croxley złapał za nadgarstek L. Devaughn, wycofał ją do tyłu.
+[2.02.2025 22:15:20] [Czat IC] Nieznajomy F7ZC mówi: Jeśli masz jakiś problem, podbij z tym do porucznika.
+[2.02.2025 22:15:15] [Czat IC] Ivan Sergeyev mówi: Uwielbiam gadać z takimi jak ty.
+[2.02.2025 22:15:14] [Czat IC] Nieznajomy Z3U5 mówi: Wyjmij głowę z dupy, Broussard. Działamy przy niebezpiecznych ludziach - nie będę narażał siebie czy swojej kobiety tym że ktoś się będzie potem na mnie mścił.
+[2.02.2025 22:15:13] [Czat IC] Nieznajomy F7ZC mówi: Jest to scena.. w której są postronne osoby, nie chce by moi detektywi byli spaleni.
+[2.02.2025 22:15:11] [Czat IC] Jack Strauser mówi: To po środku to nie latarka.
+[2.02.2025 22:15:08] [Czat IC] Nieznajomy WDEP mówi: Nikt nikogo nie aresztuje i tyle.
+[2.02.2025 22:15:01] [Czat IC] Jack Strauser mówi: Skoro lubisz. *rozkraczył lekko nogi*.
+[2.02.2025 22:14:53] [Czat IC] Ivan Sergeyev mówi: Dawaj, jeszcze raz to zrobie.
+[2.02.2025 22:14:51] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Cool, zaraz go aresztujemy. **
+[2.02.2025 22:14:50] [Czat IC] Gonzalo Calles mówi (radio): Frank nic nie wyczuł.. Wszycy są clear.
+[2.02.2025 22:14:46] [Czat IC] Jack Strauser mówi: Już dwóch mnie was wymasowało po jajach, nie wystarczy?
+[2.02.2025 22:14:43] [Czat IC] ** [Kanał: 782] Barry Kerekes: Cameron SUVORIN. **
+[2.02.2025 22:14:41] [Akcja /do] ** Nie. (( Amelia Lopez ))
+[2.02.2025 22:14:36] [Czat IC] Nieznajomy HCZTG mówi: Pokaż mi punkt.
+[2.02.2025 22:14:31] [Czat IC] Jack Strauser mówi: No i kolejny mnie macać będzie.
+[2.02.2025 22:14:29] [Czat IC] Elijah Croxley mówi: Hey, pies coś na nim wyczuł - sprawdźcie go.
+[2.02.2025 22:14:20] [Akcja /me] * Elijah Croxley złapał za rękę J. Strauser - odciągnął go od tłumu.
+[2.02.2025 22:14:18] [Czat IC] Nieznajomy HCZTG mówi: Sierżant patrolu tutaj? Daamn, z jakiej racji?
+[2.02.2025 22:14:17] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Jego dane? **
+[2.02.2025 22:14:14] [Akcja /do] ** U Lauren również została wyczuta marihuana - Nic innego. (( Lauren Devaughn ))
+[2.02.2025 22:14:14] [Akcja /do] ** Nie. (( Jack Strauser ))
+[2.02.2025 22:14:12] [Czat IC] ** [Kanał: 782] Barry Kerekes: Zabierałem go od Was, to właściciel klubu, potwierdzam. **
+[2.02.2025 22:14:04] [Akcja /do] ** Czy pies ze szkoleniem Canine spod ramienia SEB, a jednocześnie wyszkolony na wyszukiwaniu prochu strzelniczego, w momencie kiedy został wypuszczony i przeszedł obok wszystkich zatrzymanych mógł takowych proch wyczuć od kogoś? (( K-9 Frank ))
+[2.02.2025 22:14:00] [Czat IC] ** [Kanał: 782] Blake Dawson: Miał berrete na sobie na pewno. **
+[2.02.2025 22:14:00] [Czat IC] Blake Dawson mówi (krótkofalówka): Miał berrete na sobie na pewno.
+[2.02.2025 22:13:57] [Czat IC] Ivan Sergeyev mówi: Dzięki.
+[2.02.2025 22:13:55] [Czat IC] Ivan Sergeyev mówi: Zajebiśćie.
+[2.02.2025 22:13:54] [Czat IC] ** [Kanał: 782] Barry Kerekes: Czarna bluza, czarna czapka i broda? **
+[2.02.2025 22:13:54] [Czat IC] Barry Kerekes mówi (krótkofalówka): Czarna bluza, czarna czapka i broda?
+[2.02.2025 22:13:54] [Czat IC] Nieznajomy WDEP mówi: Ta.
+[2.02.2025 22:13:50] [Akcja /do] ** U Jack'a Marichuanę mógł wyniuchać. (( Jack Strauser ))
+[2.02.2025 22:13:50] [Czat IC] Ivan Sergeyev mówi: Clear, yeah?
+[2.02.2025 22:13:49] [Akcja /do] ** Nie mógł nic wyczuć. (( Luna Haru ))
+[2.02.2025 22:13:49] [Akcja /me] * Barry Kerekes sięga po radio z paska, przystawia do ust.
+[2.02.2025 22:13:43] [Czat IC] Nieznajomy WDEP mówi: A to sprawdziłem ją.
+[2.02.2025 22:13:33] [Czat IC] ** [Kanał: 782] Blake Dawson: SEB Czy osoba która wyszła tylnim wyjściem i została aresztowana, miała broń na sobie siedzi już w wozie? **
+[2.02.2025 22:13:30] [Akcja /me] * K-9 Frank samemu wręcz ciągnąc za sobą handlera ruszył z pyskiem wbitym w podłogę w stronę kolejnej partii zatrzymanych, przeszedł zgrabnie tuż obok nich obwąchiwując.
+[2.02.2025 22:13:30] [Czat IC] Jack Strauser mówi: To ta co nam nie potrafi mordercy bouncera znaleźć. *westchnął ciężko, rozejrzał się*.
+[2.02.2025 22:13:27] [Akcja /do] ** Czy pies K9 spod drug detail wyczuł coś na ludziach ustawionych pod sceną? Pies jest wyszkolony na wyczuwanie zapachu substancji kontrolowanych, jeśli ktoś z nich posiadał coś na sobie - ten zaczął dawać znaki. (( Elijah Croxley ))
+[2.02.2025 22:13:26] [Czat IC] Ivan Sergeyev mówi: Ta w czerwonej miniówce.
+[2.02.2025 22:13:22] [Czat IC] Ryan Caldwell mówi: Masz tu stać.
+[2.02.2025 22:13:20] [Czat IC] Nieznajomy WDEP mówi: Która?
+[2.02.2025 22:13:16] [Akcja /me] * Christopher Malone chwycił kobiete za ramie i prowadzi za sobą.
+[2.02.2025 22:13:13] [Akcja /me] ** Ryan Caldwell założył kajdanki na ręce Amelia Lopez.
+[2.02.2025 22:13:11] [Akcja /me] * Azura Callaghan przytaknęła do czarnego.
+[2.02.2025 22:13:11] [Akcja /me] * Ryan Caldwell złapał A. Lopez pod ramie, zaczął ją również prowadzić.
+[2.02.2025 22:13:08] [Czat IC] Nieznajomy OAW1 mówi: Będziemy ich potem sprawdzać.
+[2.02.2025 22:13:07] [Czat IC] Sadie Blythe mówi: Zaprowadź ją na środek gdzie reszta.
+[2.02.2025 22:13:07] [Akcja /me] * Gonzalo Calles podszedł z Frank'iem do pierwszej osoby od lewej, następnie wskazał palcem na osoby, po czym wydał komende, aby pies zaczął obwąchiwać ludzi.
+[2.02.2025 22:13:03] [Czat IC] Nieznajomy OAW1 mówi: Dajcie znać jak już zdjęcie zrobicie.
+[2.02.2025 22:13:01] [Akcja /me] * Jack Strauser kiwął na Azurę i się wyszczerzył.
+[2.02.2025 22:12:59] [Czat IC] Audycja Daily Globe: Agencja Reuters ujawniła, że śmigłowiec Black Hawk wykonywał lot szkoleniowy w ramach misji mającej na celu ewakuację wysokich rangą urzędników w przypadku zagrożenia dla USA. To element tajnego planu „ciągłości rządu”. [...]
+[2.02.2025 22:12:59] [Czat IC] Ryan Caldwell mówi: Stop resisting.
+[2.02.2025 22:12:53] [Czat IC] Azura Callaghan mówi: Dobra - zacznijmy może od lewej zdjęcia, okay? Raczej nie będziemy z takiej odległości robić, chujowe światło tu jest..
+[2.02.2025 22:12:50] [Czat IC] Jack Strauser mówi: Ooo!
+[2.02.2025 22:12:35] [Czat IC] Christopher Malone mówi: Czysta *zgarnął dowód od kobiety i pokazał w kierunku Sadie, końcowo włożył dowód osobisty z powrotem do kieszeni kobiety*.
+[2.02.2025 22:12:35] [Akcja /me] * Elijah Croxley przeszedł w lini z psem K9, spod drug detail - obszedł z nim przy ludziach, pozwalając mu wąchać ludzi ustawionych przy scenie.
+[2.02.2025 22:12:28] [Akcja /me] ** Nieznajomy Z3U5 zakłada rękawiczki.
+[2.02.2025 22:12:09] [Akcja /me] * Gonzalo Calles pociągnął psa ponownie za sobą.
+[2.02.2025 22:12:07] [Akcja /me] * Ivan Sergeyev podszedł do Nieznajomej, i sciągnął jej maske z twarzy.
+[2.02.2025 22:11:59] [Akcja /do] ** Nic nie wyczuł. (( Amelia Lopez ))
+[2.02.2025 22:11:59] [Akcja /me] * Ryan Caldwell złapał 2X6P4 pod ramie, zaczął ją prowadzić do reszty.
+[2.02.2025 22:11:41] [Czat IC] Sadie Blythe mówi: Malone, potem pójdziemy na środek jak ją sprawdzisz.
+[2.02.2025 22:11:40] [Akcja /do] ** Nic nie wyczuł. (( Layla Clark ))
+[2.02.2025 22:11:38] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Fotografujemy ich. **
+[2.02.2025 22:11:38] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Fotografujemy ich.
+[2.02.2025 22:11:37] [Akcja /me] ** Ryan Caldwell założył kajdanki na ręce Bernard Patton.
+[2.02.2025 22:11:37] [Czat IC] Bernard Patton mówi: Zachciało mi się iść do dziwkarni.
+[2.02.2025 22:11:36] [Akcja /do] ** Nie. (( Lauren Devaughn ))
+[2.02.2025 22:11:35] [Akcja /me] * Ryan Caldwell wepchał chłopa między dwie baby, następnie upewnił się, że ma dobrze zapięte metale.
+[2.02.2025 22:11:32] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Nie przenoście ich nigdzie już, niech są tam gdzie są. **
+[2.02.2025 22:11:32] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Nie przenoście ich nigdzie już, niech są tam gdzie są.
+[2.02.2025 22:11:31] [Czat IC] Ivan Sergeyev mówi: Co z tymi dwiema?
+[2.02.2025 22:11:30] [Akcja /do] ** Pies nic nie wyczuł przy 2X6P4. (( Nieznajomy 2X6P4 ))
+[2.02.2025 22:11:27] [Akcja /do] ** Nie mógł. (( Luna Haru ))
+[2.02.2025 22:11:27] [Czat IC] Elijah Croxley mówi: Macie coś na nich?
+[2.02.2025 22:11:26] [Akcja /do] ** Czysta. (( Susan Miles ))
+[2.02.2025 22:11:23] [Akcja /me] * Nieznajomy 2X6P4 spojrzała na pieska, uśmiechnęła się do niego przez bandanę.
+[2.02.2025 22:11:19] [Czat IC] Azura Callaghan mówi: Ey, zostaw.. ja..
+[2.02.2025 22:11:18] [Akcja /do] ** Od Jacusia nie. (( Jack Strauser ))
+[2.02.2025 22:11:08] [Czat IC] Lincoln Walsh mówi: Dobra, robić im zdjęcia. Do albumu rodzinnego.
+[2.02.2025 22:10:59] [Czat IC] Ryan Caldwell mówi: Zamknij się, gościu.
+[2.02.2025 22:10:58] [Czat IC] Bernard Patton mówi: Gówno na mnie macie.
+[2.02.2025 22:10:56] [Akcja /me] * Ryan Caldwell złapał B. Patton za ramie, zaczął go prowadzić pod rury.
+[2.02.2025 22:10:51] [Czat IC] Bernard Patton mówi: Będziecie mieli problemy.
+[2.02.2025 22:10:50] [Akcja /me] * Christopher Malone sprawnie przeszukuje kobiete, sprawdzając czy posiada substancje psychoaktywne, niebezpieczne narzędzia oraz dowód osobisty przy sobie.
+[2.02.2025 22:10:48] [Akcja /do] ** Czy pies ze szkoleniem Canine, a jednocześnie wyszkolony na wyszukiwaniu prochu strzelniczego, w momencie kiedy został wypuszczony i przeszedł obok wszystkich zatrzymanych mógł takowych proch wyczuć? (( K-9 Frank ))
+[2.02.2025 22:10:45] [Czat IC] Bernard Patton mówi: Słuchajcie ja jestem poważaną osobą.
+[2.02.2025 22:10:44] [Czat IC] ** [Kanał: 782] Nieznajomy OAW1: Osoby pod sceną są sprawdzone? **
+[2.02.2025 22:10:44] [Czat IC] Nieznajomy OAW1 mówi (krótkofalówka): Osoby pod sceną są sprawdzone?
+[2.02.2025 22:10:33] [Akcja /do] ** Amelia Lopez jest zakuta? (( Ivan Sergeyev ))
+[2.02.2025 22:10:28] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Niech siedzą tam gdzie siedzą, nie ma już miejsca. **
+[2.02.2025 22:10:28] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Niech siedzą tam gdzie siedzą, nie ma już miejsca.
+[2.02.2025 22:10:27] [Czat IC] Azura Callaghan mówi: Cześć - wstańcie łaskawie i uśmiech..
+[2.02.2025 22:10:27] [Czat IC] Nieznajomy OAW1 mówi: Sprawdziliście ich?
+[2.02.2025 22:10:25] [Czat IC] Jack Strauser mówi: Niee, dalej wolę cycuszki.
+[2.02.2025 22:10:24] [Czat IC] Ivan Sergeyev mówi: Dawajcie wszystkich tam.
+[2.02.2025 22:10:19] [Czat IC] Lauren Devaughn mówi: Może czas zmienić orientację?
+[2.02.2025 22:10:16] [Akcja /me] * Ryan Caldwell złapał P. Frost za ramie, zaczął go prowadzić do reszty zatrzymanych.
+[2.02.2025 22:10:10] [Czat IC] Philip Frost mówi: Będą nam do odbytu zaglądać, fuck.
+[2.02.2025 22:10:08] [Czat IC] Jack Strauser mówi: Szkoda, że trzej faceci.
+[2.02.2025 22:10:07] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Potem będziemy się rozliczać z każdego nielegalnego przedmiotu. **
+[2.02.2025 22:10:07] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Potem będziemy się rozliczać z każdego nielegalnego przedmiotu.
+[2.02.2025 22:10:05] [Czat IC] Ryan Caldwell mówi: Gdzie wy ich dajecie? Dajcie ich pod rury.
+[2.02.2025 22:10:03] [Czat IC] Philip Frost mówi: Co za dziwki, ty.
+[2.02.2025 22:10:01] [Czat IC] Jack Strauser mówi: Zaraz jeszcze po raz trzeci mi ktoś będzie jajka dotykał.. W sumie fajnie - trzy różne osoby w jednym klubie.
+[2.02.2025 22:09:56] [Akcja /me] * Ivan Sergeyev zgarnął Kaia Musaeva i podprowadził pod scene.
+[2.02.2025 22:09:56] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Na ten moment broń palną zostawiajcie przy sobie. **
+[2.02.2025 22:09:56] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Na ten moment broń palną zostawiajcie przy sobie.
+[2.02.2025 22:09:51] [Czat IC] Ryan Caldwell mówi: Bierz ją pod rury.
+[2.02.2025 22:09:50] [Akcja /me] * Cassian Zeke wystawił do feds'a Ruska.
+[2.02.2025 22:09:50] [Czat IC] Nieznajomy OAW1 mówi: Tam są ludzie pod sceną.
+[2.02.2025 22:09:49] [Czat IC] Barry Kerekes mówi: Za chwilę po niego wrócę.
+[2.02.2025 22:09:43] [Czat IC] Nieznajomy OAW1 mówi: Nie stójcie tak w jednym miejscu bo nas rozwalą.
+[2.02.2025 22:09:43] [Komenda] /g 3 g
+[2.02.2025 22:09:42] [Akcja /me] * Barry Kerekes zmienia się z operatorem przy facecie, popycha go przytrzymując zarazem na schodach, przechodzi w kierunku wyjścia.
+[2.02.2025 22:09:39] [Czat IC] Cassian Zeke mówi: Chcesz jego metal?
+[2.02.2025 22:09:31] [Akcja /me] * Lauren Devaughn podążyła za nim bezproblemowo.
+[2.02.2025 22:09:26] [Czat IC] Barry Kerekes mówi: Wezmę go, działajcie dalej.
+[2.02.2025 22:09:26] [Akcja /me] * K-9 Frank naturalnie podszedł do czwórki zatrzymanych, przeszedł wokół nich dość spokojnie przy czym wbił psyk w ziemie, zaczął obwąchywać otoczenie, a jednocześnie ludzi.
+[2.02.2025 22:09:26] [Czat IC] Sadie Blythe mówi: Boże, im szybciej to załatwimy tym szybciej będą wolni.. a tak się szarpią.
+[2.02.2025 22:09:14] [Akcja /me] * Jack Strauser spojrzał potem na lewo.
+[2.02.2025 22:09:11] [Czat IC] Nieznajomy OAW1 mówi: To za bycie pyskatym.
+[2.02.2025 22:09:11] [Czat IC] Kaia Musaeva mówi: Wole na krzesle.
+[2.02.2025 22:09:11] [Czat IC] Bernard Patton krzyczy: MORDA PHIL!
+[2.02.2025 22:09:08] [Akcja /me] * Cassian Zeke wyrzucił magazynek z jego broni. Wykonał press-check na niej. Wyrzucając finalnie nabój, złapał go wrzucając do worka. Wraz z bronią. Złapał Larion'a podnosząc go do góry.
+[2.02.2025 22:09:07] [Czat IC] Nieznajomy OAW1 mówi: Albo na ziemi.
+[2.02.2025 22:09:02] [Akcja /me] * Jack Strauser spojrzał na prawo.
+[2.02.2025 22:08:55] [Akcja /me] * Estrella Fedossova zerka co jakis czas w kierunku Perseus Ilarion.
+[2.02.2025 22:08:54] [Akcja /me] * Ryan Caldwell złąpał L. Devaughn za ramie, podniósł ją okrężnym ruchem i zaczął prowadzić pod rury.
+[2.02.2025 22:08:39] [Czat IC] Jack Strauser mówi: Już miałem się drzeć.
+[2.02.2025 22:08:38] [Czat IC] Nieznajomy OAW1 mówi: Chodź.
+[2.02.2025 22:08:37] [Akcja /me] * Ryan Caldwell przestał prowadzić kobietę, zostawił ją patrzącą na rury.
+[2.02.2025 22:08:36] [Akcja /me] * Nieznajomy OAW1 wsunął łape do jej kieszeni, wyciągnął portfel po czym wsadził do niego DL, schował ponownie portfel do jej kieszeni.
+[2.02.2025 22:08:35] [Czat IC] Jack Strauser mówi: Oo.. Dzięki.
+[2.02.2025 22:08:31] [Akcja /me] * Ivan Sergeyev podniósł J.Strauser'a.
+[2.02.2025 22:08:30] [Akcja /me] * Nieznajomy WDEP bierze ją za biceps podnosząc do góry.
+[2.02.2025 22:08:20] [Akcja /me] * Nieznajomy ERLYW wskazał jej miejsce obok /koleżanki/.
+[2.02.2025 22:08:20] [Czat IC] Kaia Musaeva mówi: Smialo.
+[2.02.2025 22:08:16] [Czat IC] Nieznajomy WDEP mówi: Wstawaj.
+[2.02.2025 22:08:14] [Czat IC] Nieznajomy OAW1 mówi: Pozwolisz że wyciągne portfel ponownie i wsadze Ci tam DL?
+[2.02.2025 22:08:01] [Akcja /me] * Luna Haru wstała bez wiekszych oporów i dała się prowadzić.
+[2.02.2025 22:07:56] [Czat IC] Audycja Daily Globe: „The New York Times” podał, że wieża kontrolna była obsadzona niewystarczająco. Kontroler, który w środę wieczorem nadzorował ruch, łączył obowiązki dwóch stanowisk, co mogło wpłynąć na bezpieczeństwo operacji lotniczych.
+[2.02.2025 22:07:55] [Czat IC] Jack Strauser mówi: Mogę się na plecy pierdolnąć? Zostałem ostatnio dźgnięty nożem, nie wytrzymam długo na brzuchu.
+[2.02.2025 22:07:48] [Akcja /me] * Nieznajomy WDEP opiera się przy kobiecie przechodząc na patdown oklepując ją.
+[2.02.2025 22:07:47] [Akcja /me] * Blake Dawson ściągnął hełm przypiął go do kabury, okulary zarzucił na czoło.
+[2.02.2025 22:07:47] [Czat OOC] (( Nieznajomy ERLYW (235): Ją do*. ))
+[2.02.2025 22:07:41] [Czat IC] Jack Strauser mówi: Oi, zastępco!
+[2.02.2025 22:07:32] [Akcja /me] * Nieznajomy JCZAK spojrzała na Broussarda, uniosła brew dziwiąc się co tu robi patrolowiec.
+[2.02.2025 22:07:24] [Akcja /me] * Nieznajomy ERLYW przytaknął mu głową bez słowa, podszedł i chwycił drugą laskę; podniósł jądo góry.
+[2.02.2025 22:07:23] [Akcja /me] * Sadie Blythe wzięła urządzenie w dłoń, trzyma je jedną reką.
+[2.02.2025 22:07:21] [Akcja /me] * Christopher Malone wystawił laptopa w strone S.Blythe.
+[2.02.2025 22:07:20] [Czat IC] Lincoln Walsh mówi: Je też, wszystkich pod ścianę jak już przeszukacie.
+[2.02.2025 22:07:19] [Czat IC] Ivan Sergeyev mówi: Ustawimy ich razem dla canine.
+[2.02.2025 22:07:15] [Czat IC] Ivan Sergeyev mówi: Weź tą druga.
+[2.02.2025 22:07:11] [Akcja /me] * Ivan Sergeyev zgarnął S.Milles, i podniósł dziewczyne prowadząc przed sobą.
+[2.02.2025 22:07:11] [Czat IC] Sadie Blythe mówi: Daj.
+[2.02.2025 22:07:10] [Czat IC] Ryan Caldwell mówi (radio): Bierzmy ich w jeden rząd w barze.
+[2.02.2025 22:07:10] [Czat IC] Sadie Blythe mówi: Mogę potrzymać.
+[2.02.2025 22:07:04] [Akcja /do] ** Jest czysta. (( Lauren Devaughn ))
+[2.02.2025 22:06:59] [Akcja /me] * Nieznajomy Z3U5 naciągnął nitryle na dłonie, wykonał pat-down na L.Devaughn.
+[2.02.2025 22:06:57] [Czat IC] Ivan Sergeyev mówi: Hey, pomóż mi jedną podnieść.
+[2.02.2025 22:06:56] [Czat IC] Ryan Caldwell mówi: Weźmy ich w jeden rząd.
+[2.02.2025 22:06:53] [Czat IC] ** [Kanał: 782] Cassian Zeke: Mam na nim 9mm. **
+[2.02.2025 22:06:51] [Akcja /me] * Archie Sanders prowadzi faceta za Wlashem.
+[2.02.2025 22:06:46] [Akcja /me] * Nieznajomy HCZTG przeleciał po ciele Jacka, zrobił na nim pat-down.
+[2.02.2025 22:06:42] [Czat IC] Sadie Blythe mówi: Zaczynajcie jak będziecie mogli, nie?
+[2.02.2025 22:06:42] [Czat IC] Blake Dawson mówi: Siadać.
+[2.02.2025 22:06:38] [Akcja /me] * Lincoln Walsh złapał ją za ramię, zaczął prowadzić w stronę ściany.
+[2.02.2025 22:06:37] [Czat IC] ** [Kanał: 782] Nieznajomy OAW1: Mam to, zabierzemy ją do środka. **
+[2.02.2025 22:06:31] [Akcja /me] ** Nieznajomy HCZTG zakłada rękawiczki.
+[2.02.2025 22:06:29] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Wszyscy na ten moment siedzą w miejscu. **
+[2.02.2025 22:06:29] [Czat IC] Lincoln Walsh mówi (krótkofalówka): Wszyscy na ten moment siedzą w miejscu.
+[2.02.2025 22:06:28] [Czat IC] Archie Sanders mówi: Wstawaj, man.
+[2.02.2025 22:06:27] [Czat IC] Azura Callaghan mówi: Na podłodze go nie odłożę, przy barze pewnie wszystko upieprzone w alkoholu.. Lepiej nie ryzykować, tu są pewne ręce, zdecydowanie.
+[2.02.2025 22:06:26] [Czat IC] ** [Kanał: 782] Barry Kerekes: Pozostaw na miejscu, ważny POI. **
+[2.02.2025 22:06:26] [Czat IC] Barry Kerekes mówi (krótkofalówka): Pozostaw na miejscu, ważny POI.
+[2.02.2025 22:06:25] [Czat IC] Nieznajomy HCZTG mówi: Przeszukany?
+[2.02.2025 22:06:23] [Akcja /me] * Nieznajomy 2X6P4 obróciła się na bok, zaczęła wstawać na proste nogi.
+[2.02.2025 22:06:15] [Czat IC] ** [Kanał: 782] Nieznajomy OAW1: Kobieta przed wejściem to Kaia M-U-S-A-E-V-A, urodzona na terenie USA, co z nią zrobić? Ma 19 lat. **
+[2.02.2025 22:06:14] [Czat IC] Lincoln Walsh mówi: Wstawaj, kobieto.
+[2.02.2025 22:06:11] [Czat IC] Jack Strauser mówi: Kuurde, najpierw fajna Irlandka, teraz kolejna ktosia. *spojrzał na Lauren* W tym biurze mają coraz lepsze dziewczyny.
+[2.02.2025 22:06:07] [Czat IC] Lincoln Walsh mówi: Zaraz się tym zajmiemy. Najpierw wszystkich pod ścianę.
+[2.02.2025 22:06:06] [Czat IC] Barry Kerekes mówi: Wszystkich, absolutnie wszystkich.
+[2.02.2025 22:06:06] [Czat IC] Philip Frost mówi: Mamy się kurwa czołgać chyba, ten agent mało myśli.
+[2.02.2025 22:05:55] [Komenda] /g 3 g
+[2.02.2025 22:05:51] [Akcja /me] * Jack Strauser spojrzał na Yasmin stojącą nad nią.
+[2.02.2025 22:05:49] [Czat IC] Nieznajomy 2X6P4 mówi: To jak mamy przejść pod ścianę?
+[2.02.2025 22:05:49] [Akcja /me] * Barry Kerekes rozgląda sie po osobach na podłodze, mlaska lustrując każdego z kolei.
+[2.02.2025 22:05:44] [Czat IC] Lincoln Walsh mówi: Nie możecie.
+[2.02.2025 22:05:43] [Komenda] .bronpoza2
+[2.02.2025 22:05:42] [Czat IC] Philip Frost mówi: Nie mogę oddychać, ty.
+[2.02.2025 22:05:41] [Komenda] .bronpoza
+[2.02.2025 22:05:41] [Czat IC] Nieznajomy 2X6P4 mówi: Możemy wstać?
+[2.02.2025 22:05:37] [Akcja /me] * Azura Callaghan wcisnęła laptopa C. Malone pod pachę.
+[2.02.2025 22:05:33] [Akcja /me] ** Nieznajomy JCZAK zakłada rękawiczki.
+[2.02.2025 22:05:32] [Czat IC] Philip Frost mówi: Zaroiło się tu od federalnych, co za pojebane miejsce.
+[2.02.2025 22:05:29] [Czat IC] Azura Callaghan mówi: Nie chcesz trzymać tego laptopa? Ciężkie to cholerstwo.
+[2.02.2025 22:05:22] [Czat IC] Sadie Blythe mówi: Nie byłam w klubie chyba od dziesięciu lat.
+[2.02.2025 22:05:19] [Czat IC] Lincoln Walsh mówi: Wszystkich, wszystkich.
+[2.02.2025 22:05:18] [Akcja /me] * Azura Callaghan rozejrzała się na wejściu, westchnęła ciężko.
+[2.02.2025 22:05:14] [Akcja /do] ** Pika w chuj. (( Nieznajomy Z3U5 ))
+[2.02.2025 22:05:13] [Akcja /me] * Lincoln Walsh wskazał na ścianę.
+[2.02.2025 22:05:10] [Akcja /do] ** Wiadomo że pika. (( Nieznajomy JCZAK ))
+[2.02.2025 22:05:10] [Czat IC] Barry Kerekes mówi: Uwielbiam takie miejsca, ten smród.. ugh.
+[2.02.2025 22:05:09] [Czat IC] Philip Frost mówi: Zara umrę.
+[2.02.2025 22:05:08] [Czat IC] Lincoln Walsh mówi: Dobra, to tak. Wszystkich pod tamtą ścianę.
+[2.02.2025 22:05:06] [Akcja /do] ** Bramka nie reaguje na biżuterie. ((Odegraj stosowne /do)) **
+[2.02.2025 22:05:05] [Akcja /do] ** Pika. (( Nieznajomy F7ZC ))
+[2.02.2025 22:05:04] [Akcja /do] ** Bramka pika. (( Christopher Malone ))
+[2.02.2025 22:05:01] [Czat IC] ** [Kanał: 782] Elijah Croxley: Jednostka canine - dajcie mi znać, kiedy będę mógł wejść do środka. **
+[2.02.2025 22:04:53] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Niech siedzi pod samochodem. **
+[2.02.2025 22:04:52] [Akcja] [Akcja] Wszedł do interioru Palace of Pleasure (UID 27696)
+[2.02.2025 22:04:48] [Akcja /do] * Terminal zaakceptował transakcję, wyświetlił komunikat: "Transakcja zaakceptowana.". (( Sadie Blythe ))
+[2.02.2025 22:04:47] [Czat IC] ** [Kanał: 782] Davon Sears: Mam go gdzieś wsadzić? **
+[2.02.2025 22:04:47] [Akcja /do] * Terminal rozpoczął realizację transakcji, wyświetlił komunikat: "Proszę czekać...". (( Sadie Blythe ))
+[2.02.2025 22:04:36] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Niech siedzi dopóki go nie puścimy. **
+[2.02.2025 22:04:28] [Czat IC] ** [Kanał: 782] Davon Sears: Co ma mzrobić z tym facetem przed klubem? **
+[2.02.2025 22:04:25] [Czat IC] Sadie Blythe mówi: Chodźcie.
+[2.02.2025 22:04:19] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Pilnujcie tej dwójki pod autem. **
+[2.02.2025 22:04:15] [Czat OOC] (( Jose Munoz (311): LSSD OPP. ))
+[2.02.2025 22:04:15] [Komenda] /u czapka
+[2.02.2025 22:04:12] [Czat IC] ** [Kanał: 782] Lincoln Walsh: FBI, wchodzimy. Wolne jednostki niech tymczasowo zostają. **
+[2.02.2025 22:04:08] [Czat IC] ** [Kanał: 782] Blake Dawson: Clear możecie wchodzić. **
+[2.02.2025 22:04:00] [Czat IC] ** [Kanał: 782] Ryan Caldwell: Wszyscy są na glebie. **
+[2.02.2025 22:03:59] [Akcja] [Pojazd Vapid Scout (UID 125646)] [Akcja] Wysiadł z pojazdu (siedzenie 4)
+[2.02.2025 22:03:57] [Akcja /do] ** Nic. (( Nieznajomy HCZTG ))
+[2.02.2025 22:03:53] [Akcja /me] ** Fabien Lautier zakłada kominiarkę na twarz.
+[2.02.2025 22:03:52] [Czat IC] Nieznajomy HCZTG mówi: T.bron3.
+[2.02.2025 22:03:52] [Czat IC] ** [Kanał: 782] Lincoln Walsh: SEB, jak w środku? **
+[2.02.2025 22:03:51] [Czat IC] Audycja Daily Globe: Wstępne ustalenia wskazują, że Black Hawk mógł znajdować się poza zatwierdzoną trasą lotu. Śmigłowiec nie tylko leciał wyżej, niż powinien, ale także przeciął ruchliwą przestrzeń powietrzną w pobliżu lotniska.
+[2.02.2025 22:03:44] [Akcja /me] ** Gabriela Alvarado zakłada kominiarkę na twarz.
+[2.02.2025 22:03:43] [Akcja /me] ** Zadock Moses zakłada kominiarkę na twarz.
+[2.02.2025 22:03:40] [Akcja] [Pojazd Vapid Scout (UID 125646)] [Akcja] Wysiadł z pojazdu (siedzenie 2)
+[2.02.2025 22:03:38] [Akcja /me] ** Hank Queensberg zakłada kominiarkę na twarz.
+[2.02.2025 22:03:38] [Akcja /me] ** Alejandro Vargas zakłada kominiarkę na twarz.
+[2.02.2025 22:03:27] [Komenda] /p p
+[2.02.2025 22:02:57] [Akcja] [Pojazd Vapid Scout (UID 125646)] [Akcja] Wysiadł z pojazdu (siedzenie 2)
+[2.02.2025 22:02:53] [Czat IC] Jose Munoz mówi: Tieah.. jest dobrze trainee - To nasza robota, czyli stać i to w sumie na tym się kończy.
+[2.02.2025 22:02:52] [Czat IC] Florence Murray mówi: Lata zapasów robią wrażenie.
+[2.02.2025 22:02:43] [Czat IC] Florence Murray mówi: Na studiach dorabiałem sobie jako bramkarz w podrzędnym klubie, słowo.
+[2.02.2025 22:02:17] [Czat IC] Gabriela Alvarado mówi: Najwidoczniej, brakuje patrolu i zamiast odpierdalać tą robote po prostu stoi.
+[2.02.2025 22:02:14] [Czat IC] Florence Murray mówi: Hey, deputy Munoz, tak dobrze stoję?
+[2.02.2025 22:01:50] [Czat IC] Fabien Lautier mówi: Broussardowi się nie pojebały roboty?
+[2.02.2025 22:01:49] [Czat IC] ** [Kanał: 782] Reece Crawford: Potrzebuje jedną osobę na tyły jestem sam. **
+[2.02.2025 22:01:15] [Czat IC] ** [Kanał: 782] Barry Kerekes: Właściciel klubu in-custody. **
+[2.02.2025 22:00:23] [Czat IC] ** [Kanał: 782] Reece Crawford: Jestem z tyłu, jest mała brama i drzwi. **
+[2.02.2025 22:00:03] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Pod drzwi. **
+[2.02.2025 21:59:57] [Czat IC] ** [Kanał: 782] Nieznajomy OAW1: Dokąd mamy iść? **
+[2.02.2025 21:59:46] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Sears, podejdź tu i weź tego gościa. ICE, chodźcie. **
+[2.02.2025 21:59:24] [Komenda] /g 3 g
+[2.02.2025 21:59:06] [Czat IC] Audycja Daily Globe: Samolot pasażerski leciał z Wichita w stanie Kansas, mając na pokładzie 64 osoby, w tym czterech członków załogi. Na pokładzie śmigłowca znajdowało się trzech żołnierzy armii USA. Obie maszyny miały lądować na lotnisku im. Ronalda Reagana w Arlington.
+[2.02.2025 21:58:55] [Czat IC] Sadie Blythe mówi: Malone, pomożesz Callaghan robić zdjęcia i sprawdzać tych ludzi.
+[2.02.2025 21:58:54] [Czat IC] ** [Kanał: 782] Blake Dawson: Szybko dajcie mi kogoś na tyły, agent czy ktoś z oznakowanej, mamy tutaj osobę która wyszla z klubu. **
+[2.02.2025 21:58:47] [Czat IC] ** [Kanał: 782] Barry Kerekes: Zróbcie to, pilnie. **
+[2.02.2025 21:58:41] [Czat IC] ** [Kanał: 782] Reece Crawford: Obstawić tył? **
+[2.02.2025 21:58:40] [Czat IC] Ryan Caldwell krzyczy: NA ZIEMIE, NIE SIĘGAJ PO NIC!
+[2.02.2025 21:58:24] [Czat IC] ** [Kanał: 782] Blake Dawson: SEB od  tylniego wyjścia wyszła jedna osoba, dajcie tu kogoś. **
+[2.02.2025 21:57:58] [Czat IC] ** [Kanał: 782] Blake Dawson: SEB Robimy synchroniczne wejście z dwóch stron, oczekujcie na informacje gdy będzie czysto. **
+[2.02.2025 21:57:52] [Czat IC] ** [Kanał: 782] Barry Kerekes: Jedna z jednostek obstawiających perymetr niech przejdzie po terenie i rozejrzy się za tylnym wyjściem. **
+[2.02.2025 21:57:49] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Przejmujemy ją, Fbi. **
+[2.02.2025 21:57:43] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Zaciągnę ją zaraz do środka. **
+[2.02.2025 21:57:35] [Akcja /me] ** Emiliano Ocampo zakłada kominiarkę na twarz.
+[2.02.2025 21:57:20] [Komenda] /g 3 g
+[2.02.2025 21:57:02] [Komenda] /g 3 g
+[2.02.2025 21:57:00] [Czat IC] Lincoln Walsh mówi (megafon): Federal Bureau of Investigation; wszystkich przechodniów poprosimy o oddalenie się ze sceny, mamy nakaz przeszukania. Inaczej mogą zostać zastosowane fizyczne środki przymusu.
+[2.02.2025 21:56:45] [Akcja /me] * Azura Callaghan zdjęła laptop z uchwytu, wcisnęła pod pachę.
+[2.02.2025 21:56:30] [Akcja] [Pojazd Vapid Scout (UID 125646)] [Akcja] Wysiadł z pojazdu (siedzenie 2)
+[2.02.2025 21:56:21] [Komenda] /p p
+[2.02.2025 21:54:33] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Jedźcie. **
+[2.02.2025 21:54:32] [Czat IC] Audycja Daily Globe: W środę późnym wieczorem nad rzeką Potomak w Waszyngtonie doszło do kolizji pasażerskiego Bombardiera CRJ-700 linii American Eagle ze śmigłowcem wojskowym UH-60 Black Hawk. W wyniku katastrofy zginęło wszystkich 67 osób na pokładach obu maszyn..
+[2.02.2025 21:54:30] [Czat IC] ** [Kanał: 782] Gabriela Alvarado: Mamy jechać bezpośrednio do klubu czy czekać na resztę? **
+[2.02.2025 21:54:14] [Czat IC] Emiliano Ocampo mówi: Dosłownie, hahah..
+[2.02.2025 21:53:43] [Czat IC] Hank Queensberg mówi: Kucie dziwek to będzie ciężki temat - bo tam jest polityka 'only look, don't touch', he-he.
+[2.02.2025 21:53:25] [Czat IC] ** [Kanał: 782] Lincoln Walsh: Wyjeżdżajcie. **
+[2.02.2025 21:53:18] [Czat IC] ** [Kanał: 782] Jose Munoz: 286 Adam, mamy widok na nieprzytomnego faceta w bocznej uliczce. **
+[2.02.2025 21:53:03] [Czat IC] ** [Kanał: 782] Lincoln Walsh: FBI; powoli ruszamy stąd. 286 Adam, przygotujcie się. **
+[2.02.2025 21:52:48] [Czat IC] Sadie Blythe mówi: Wsiadaj ze mną, Malone.
+[2.02.2025 21:52:44] [Czat IC] Zephyr Grimthorne mówi: Sears, c'mon.
+[2.02.2025 21:52:44] [Czat IC] Azura Callaghan mówi: C'mon.
+[2.02.2025 21:52:38] [Czat IC] Lincoln Walsh krzyczy: Ruszamy do aut i w drogę. SEB prowadzi!
+[2.02.2025 21:52:00] [Czat IC] Holden Ashford mówi: Lls gotowy.
+[2.02.2025 21:51:52] [Czat IC] ** [Kanał: 782] Florence Murray: 286 Adam, klub jest czynny, uliczka od strony północnej cała zastawiona pojazdami, od frontu jest pusto. **
+[2.02.2025 21:51:44] [Czat IC] Lincoln Walsh mówi: Weźmiemy Grangery, są pojemne.
+[2.02.2025 21:51:43] [Akcja /me] * Holden Ashford podbija do tarva, odbezpiecza lls i zawiesza go na ramie spinając na plecy.
+[2.02.2025 21:51:32] [Akcja /me] * Archie Sanders skinął krótko głową.
+[2.02.2025 21:51:32] [Czat IC] Lincoln Walsh mówi: Bierzemy jak najwięcej aut.
+[2.02.2025 21:51:23] [Czat IC] Lincoln Walsh mówi: Carrington z Callaghan. ICE razem.
+[2.02.2025 21:51:16] [Czat IC] Lincoln Walsh mówi: Kerekes, jedziesz z Searsem. Sanders ze mną. Malone z Blythe.
+[2.02.2025 21:51:01] [Czat IC] Lincoln Walsh mówi: Dobra, a więc tak. Teraz was podziele.
+[2.02.2025 21:50:44] [Czat IC] Blake Dawson mówi: I zaopatrzcie sie w sporą ilośc zip-cuffs, to burdel miejsce w którym przesiaduje sporo osób..
+[2.02.2025 21:50:31] [Czat IC] Lincoln Walsh mówi: Czy ktoś nie rozumie swoich zadań? Jednostki bez przydziału wchodzą z nami i wspierają FBI.
+[2.02.2025 21:50:22] [Czat IC] Holden Ashford mówi: Robi się.
+[2.02.2025 21:50:11] [Akcja /me] * Zadock Moses poszedł po raid jacket do landstalkera.
+[2.02.2025 21:50:10] [Akcja /me] * Azura Callaghan przytaknęła do L. Walsh.
+[2.02.2025 21:50:02] [Czat IC] Lincoln Walsh mówi: I by nie wychodzić z budynku.
+[2.02.2025 21:49:55] [Czat IC] Zadock Moses mówi: Przepraszam za spoznienie.
+[2.02.2025 21:49:51] [Czat IC] Audycja Daily Globe: Witam w „The Flight Path” – audycji, w której zgłębiamy tajemnice lotnictwa i spadochroniarstwa. Nazywam się Lukas Wright i dziś poruszymy temat ostatniej katastrofy lotniczej, która wstrząsnęła światem lotnictwa. Co doprowadziło do tego dramatycznego zdarzenia? Zapraszam do słuchania.
+[2.02.2025 21:49:49] [Czat IC] Blake Dawson mówi: To bardzo dobrze bo dwa razy powtarzać zamiaru nie mam.
+[2.02.2025 21:49:39] [Akcja /me] * Christopher Malone przytaknął, ustawił sobie częstotliwość komunikacji radiowej.
+[2.02.2025 21:49:38] [Czat IC] Gonzalo Calles mówi: Chyba brak.
+[2.02.2025 21:49:23] [Czat IC] Lincoln Walsh mówi: Naturalnie, canine zadziała tu idealnie, by nie było potem problemu w sądzie.
+[2.02.2025 21:49:22] [Czat IC] Blake Dawson mówi: Po wejściu jaksłyszeliście, glebujemy każdego, dajemy znać na radiu, reszta wchodzi robi swoje i po robocie, jakieś pytania?
+[2.02.2025 21:49:10] [Czat IC] Elijah Croxley mówi: Mam na pokładzie psa Canine, jest z drug detail - możemy rozejrzeć się po budynku w poszukiwaniu jakiegoś gówna w środku.
+[2.02.2025 21:49:02] [Czat IC] Sadie Blythe mówi: Częstotliwość radia sobie ustaw 7-8-2.
+[2.02.2025 21:48:50] [Czat IC] Blake Dawson mówi: Wszystko jasne? W środku pierszeństwo do osób które nie wykonują poleceń ma less lethal, nie będziemy sie patyczkować i bawić w przepychanki, Calldwell  idzie ostatni jako paramedyk, ja ide pierwszy, Ashford drugi, reszta normalnie aż do Caldwella.
+[2.02.2025 21:48:49] [Czat IC] Sadie Blythe mówi: Wjeżdżamy do klubu, przeszukujemy każdego, robimy zdjęcia i wychodzimy.
+[2.02.2025 21:48:45] [Akcja /me] * Elijah Croxley podniósł rękę patrząc w kierunku L. Walsh.
+[2.02.2025 21:48:35] [Akcja /me] * Christopher Malone zerknął an Lincoln'a i przytaknął w jego strone.
+[2.02.2025 21:48:23] [Akcja /me] * Lincoln Walsh odwrócił się i wskazał na C.Malone.
+[2.02.2025 21:48:20] [Czat IC] Barry Kerekes mówi: Pamiętajcie też, że nakaz nie obejmuje tylko budynku, ale i pracowników - wszelkie osoby z plakietkami klubu są do dogłębnego przeszukania, musicie mieć to z tyłu głowy.
+[2.02.2025 21:48:13] [Czat IC] Christopher Malone mówi: Cześć Bythe, w skrócie co jest ustalone?
+[2.02.2025 21:47:56] [Akcja /me] * Barry Kerekes chrząka dodając z tyłu.
+[2.02.2025 21:47:54] [Czat IC] Sadie Blythe mówi: Cześć, Malone.
+[2.02.2025 21:47:52] [Akcja /me] * Lincoln Walsh powiedział dosadnie.
+[2.02.2025 21:47:50] [Czat IC] Blake Dawson mówi: Robimy wszystko powoli, nie pchamy sie i tak dalej, jeżeli klub będzie otwarty, nie bierzemy lustra, nie będziemy rezykować że ktoś nam przydzwoni w łeb.
+[2.02.2025 21:47:48] [Czat IC] Lincoln Walsh mówi: Traktujcie ich, jakby byli pieprzonymi agentami FSB, czy innego gówna.
+[2.02.2025 21:47:47] [Akcja /me] * Christopher Malone kiwnął głową do Sadie w geście powitania, rozejrzał sie po garażu.
+[2.02.2025 21:47:35] [Czat IC] Lincoln Walsh mówi: Cool. Nie oszczędzajcie gładkolufowej.
+[2.02.2025 21:47:30] [Komenda] /rc 782
+[2.02.2025 21:47:24] [Czat IC] Blake Dawson mówi: Dobra, jeżeli klub będzie otwarty nie bierzemy  ramu Ashford idzie z beanbagiem, w środku mogą być osoby które mogą nie wykonywać poleceń, w środku sie nie śpieszymy.
+[2.02.2025 21:47:10] [Czat IC] Florence Murray mówi: Okej.
+[2.02.2025 21:46:43] [Czat IC] Lincoln Walsh mówi: Jednostka zabezpieczająca adam 286, jedźcie już teraz, wytyczne znacie. Potwierdźcie, że klub jest otwarty i dajcie znać na 7-8-2 HZ, 7-8-2 HZ jest dla wszystkich.
+[2.02.2025 21:46:11] [Czat IC] Lincoln Walsh mówi: Dodatkowo, FBI wykona fotografie każdej z osób będącej w środku.
+[2.02.2025 21:46:04] [Czat IC] Leland Broussard mówi: 286 Adam, to będziecie Wy.
+[2.02.2025 21:45:54] [Czat IC] Lincoln Walsh mówi: Nie chcemy, by ktokolwiek wszedł lub wyszedł, więc klin jest konieczny.
+[2.02.2025 21:45:32] [Komenda] /a
+[2.02.2025 21:45:32] [Czat IC] Lincoln Walsh mówi: Każdy musi zostać sfotografowany przez FBI oraz jego dane muszą zostać spisane. ICE zajmie się imigrantami, FBI spisywaniem, SEB zabezpieczaniem perymetru - plus założeniem klinu na wyjście z klubu. Jedna jednostka musi zostać przed budynkiem i pilnować wejścia - Leland wybierz sobie kogoś.
+[2.02.2025 21:45:20] [Czat OOC] (( Blake Dawson (626): . ))
+[2.02.2025 21:44:45] [Akcja /me] * Barry Kerekes powraca do pozycji wtapiając się w szereg.
+[2.02.2025 21:44:08] [Akcja /me] * Barry Kerekes wychyla się w przód, szepta do ucha Russel.
+[2.02.2025 21:44:07] [Czat IC] Lincoln Walsh mówi: [..] pod którąś ze ścian. Niezależnie którą. Jeśli ktoś zachowuje się podejrzanie, należy na nim wykonać pat-down. Bądźcie ostrożni, by nie złamać czwartej'. Ale wiemy, że podejrzane zachowanie ma dosyć szeroki zakres interpretacji w sądach.
+[2.02.2025 21:42:48] [Akcja /me] * Elijah Croxley podrzucił barkami do F. Murray.
+[2.02.2025 21:42:46] [Czat IC] Lincoln Walsh mówi: W dniu dzisiejszym przeprowadzamy operację Search Warrant na Palace of Pleasure. Jest to klub ze striptizem, w skrócie - burdel. Mamy tutaj panów z ICE nie bez przypadku. Teraz przedstawię po kolei co będziemy robić. Wchodzimy tam w sposób standardowy - każdy musi zostać podstawiony w jedno miejsce.
+[2.02.2025 21:42:22] [Czat IC] Holden Ashford mówi: Dobra, ogarne.
+[2.02.2025 21:42:13] [Czat IC] Florence Murray szepcze: Musieli nas ściągać tutaj na briefing? Nie mógł nam tego podać WC na roll'u?
+[2.02.2025 21:42:06] [Czat IC] Blake Dawson mówi: Zmiana planów, Ashford weźmiesz beanbag, będziesz miał go na plecach wrazie gdyby ktos sie napatoczył kto nie będzie wykonywał poleceń.
+[2.02.2025 21:41:40] [Czat IC] Jose Munoz szepcze: Ta dopiero zaczyna swoją przemowe..
+[2.02.2025 21:41:36] [Czat IC] Florence Murray szepcze: Yeah, jesteś dosłownie dwie po nas, dopiero zaczynają.
+[2.02.2025 21:41:06] [Czat IC] Lincoln Walsh mówi: Dobra, a więc zaczynamy.
+[2.02.2025 21:41:00] [Czat IC] Leland Broussard mówi: Zacznij mówić, reszta najwyżej się dowie od swoich.
+[2.02.2025 21:41:00] [Akcja /me] * Elijah Croxley zajął miejsce z tyłu, wbił wzrok w kierunku L. Walsh.
+[2.02.2025 21:40:40] [Komenda] .ramionam
+[2.02.2025 21:40:36] [Czat IC] Florence Murray szepcze: Cześć Croxley, jak leci?
+[2.02.2025 21:39:42] [Czat OOC] (( Barry Kerekes (177): Zw moment. ))
+[2.02.2025 21:39:28] [Komenda] .ramionam
+[2.02.2025 21:39:17] [Akcja /me] ** Dexter McRea podaje nowe dokumenty Dexter McRea.
+[2.02.2025 21:38:43] [Czat IC] Blake Dawson mówi: Jeszcze jedna jednostka do nas jedzie.
+[2.02.2025 21:38:40] [Czat IC] Florence Murray szepcze: Hey.
+[2.02.2025 21:37:47] [Czat OOC] (( Blake Dawson (626): Ide dać pinga. ))
+[2.02.2025 21:37:44] [Komenda] .pas2
+[2.02.2025 21:37:42] [Czat IC] Lincoln Walsh mówi: Dobra, czy ktoś jeszcze jedzie?
+[2.02.2025 21:37:25] [Komenda] /u czapka
+[2.02.2025 21:37:21] [Akcja] [Pojazd Vapid Scout (UID 125646)] [Akcja] Wysiadł z pojazdu (siedzenie 2)
+[2.02.2025 21:37:13] [Komenda] /g 3 g
+[2.02.2025 21:36:35] [Czat IC] Hank Queensberg mówi: Ahh... Ta - słyszałem o tym.. Kurwa.
+[2.02.2025 21:36:16] [Czat IC] Emiliano Ocampo mówi: Lautier wbił dupsko do Major's.. Hoffman również uczestniczył w Major, ale niestety opuścił ten świat.
+[2.02.2025 21:35:42] [Czat IC] Hank Queensberg mówi: BTW, jakieś roszady w składzie były w trakcie mojej absencji?
+[2.02.2025 21:34:57] [Komenda] /cad wpisz D4S1
+[2.02.2025 21:34:52] [Komenda] /cad wpisz
+[2.02.2025 21:33:58] [Akcja /do] Postać Hank Queensberg przeszła przez drzwi wyjściowe [25348] Stacja 28 Davis - tylne wejście (Interior: [20407] SD28DVS)
+[2.02.2025 21:33:57] [Akcja] [Akcja] Opuścił interior SD28DVS (UID 20407)
+[2.02.2025 21:33:35] [Czat IC] Hank Queensberg mówi: Taa, dawaj - podjedziemy.
+[2.02.2025 21:33:29] [Czat IC] Hank Queensberg mówi: Heh... Jebany 'operation ajsberg' - aż mi się kurwa Marines przypomniało.
+[2.02.2025 21:32:41] [Czat IC] Emiliano Ocampo mówi: Uderzamy na briefing?
+[2.02.2025 21:32:05] [Czat IC] Emiliano Ocampo mówi: To fakt.. kofeina potrafi uzależnić.
+[2.02.2025 21:31:59] [Czat IC] Hank Queensberg mówi: Więc no - chuj; nie jest zła. Szczególnie z przelewu - ja lubię.
+[2.02.2025 21:31:38] [Czat IC] Hank Queensberg mówi: Nie mam porównania - mam detoks od kofeiny, coś tam mnie zakuło w serduchu parę razy więc z tym zluzowałem. Pije se tylko na night shift - bo inaczej tu nie wystoje.
+[2.02.2025 21:30:16] [Czat IC] Emiliano Ocampo mówi: Nigdy nie lubiłem kawy z ekspresu stacji.. nie smakowała mi ta kawa, gorzkawa była.
+[2.02.2025 21:28:56] [Akcja /me] * Emiliano Ocampo złapał za kubek, przytakuje głową - popija kawe.
+[2.02.2025 21:28:48] [Komenda] /c Nice...
+[2.02.2025 21:28:48] [Czat IC] Hank Queensberg szepcze: Nice...
+[2.02.2025 21:28:34] [Komenda] /me zaciągnął się naparem i mruknął pod wąsem - wziął sporego łyka lekko parząc język
+[2.02.2025 21:28:34] [Akcja /me] * Hank Queensberg zaciągnął się naparem i mruknął pod wąsem - wziął sporego łyka lekko parząc język.
+[2.02.2025 21:27:52] [Komenda] .kawa
+[2.02.2025 21:27:50] [Komenda] .ramionam
+[2.02.2025 21:27:43] [Komenda] /me chwycił za dzbanek ze świeżo przelaną czarną i rozlał na kubki - wręczył Emiliano.
+[2.02.2025 21:27:43] [Akcja /me] * Hank Queensberg chwycił za dzbanek ze świeżo przelaną czarną i rozlał na kubki - wręczył Emiliano.
+[2.02.2025 21:27:18] [Czat IC] Hank Queensberg mówi: To jak? Masz jakiś pomysł czym mógłbym się zająć - czy mam sobie sam poszukać?
+[2.02.2025 21:26:15] [Komenda] /do [...] i wcisnął przycisk od blendera. Po chwili zasypał filtr i dał 'ON' na ekspresie.
+[2.02.2025 21:26:15] [Akcja /do] ** [...] i wcisnął przycisk od blendera. Po chwili zasypał filtr i dał 'ON' na ekspresie. (( Hank Queensberg ))
+[2.02.2025 21:25:38] [Komenda] /me złapał dwa ładne kubki i odpakował jeden filtr do ekspresu - złapał na pojemnik i przelał go bierzącą wodą, załadował nowy filtr, zmoczył go
+[2.02.2025 21:25:38] [Akcja /me] * Hank Queensberg złapał dwa ładne kubki i odpakował jeden filtr do ekspresu - złapał na pojemnik i przelał go bierzącą wodą, załadował nowy filtr, zmoczył go.
+[2.02.2025 21:24:47] [Czat IC] Hank Queensberg mówi: Pięknie... - Jasne, cmon'.
+[2.02.2025 21:24:04] [Czat IC] Emiliano Ocampo mówi: Jest.. cicho, przed stacją mamy cioty z czterdziestej ulicy.. na które DA Office, wystawiło gang-injuction jest tam safe-zone, ale to mniejsza. Co do naszych spraw, mamy nieco do podłapania.. możemy zgarnąć jakąś kawe, yup.
+[2.02.2025 21:23:03] [Komenda] .pas2
+[2.02.2025 21:23:01] [Czat IC] Hank Queensberg mówi: Masz chwilę pogadać? Złapać kawę, coś?
+[2.02.2025 21:22:51] [Czat IC] Hank Queensberg mówi: Heh - w każdym razie. Co tam słychać w pięknym mieście? Jestem na bakier z informacjami - więc dopiero nadrabiam zaległości.
+[2.02.2025 21:22:21] [Czat IC] Emiliano Ocampo mówi: Haha.. nic nie mów, Hank. Miałem identycznie, serio.
+[2.02.2025 21:21:29] [Czat IC] Hank Queensberg mówi: Netflix mi się skończył, czaisz? Obejrzałem chyba całego.
+[2.02.2025 21:21:09] [Czat IC] Emiliano Ocampo mówi: Wiem, wiem.. jak sam byłem na urlopie, dość przymusowy - to troche się stęskniłem, serio.
+[2.02.2025 21:21:03] [Czat IC] Hank Queensberg mówi: Siedzenie na dupie jest fajne - nawet zdążyłem troche odpocząć, ale ile można?
+[2.02.2025 21:20:36] [Komenda] .pas2
+[2.02.2025 21:20:31] [Czat IC] Hank Queensberg mówi: Yep', tak by było - ale, kurwa; stęskniłem się jak mam być szczery.
+[2.02.2025 21:20:11] [Komenda] /do Ze względnu na zdrowie psychiczne
+[2.02.2025 21:20:11] [Akcja /do] ** Ze względnu na zdrowie psychiczne. (( Hank Queensberg ))
+[2.02.2025 21:19:46] [Komenda] /do Queensberg był na dłuższym zwolnieniu - na biurko Ocampo wpadła jego opinia od doca że ten potrzebuje dłuższego urlopu.
+[2.02.2025 21:19:46] [Akcja /do] ** Queensberg był na dłuższym zwolnieniu - na biurko Ocampo wpadła jego opinia od doca że ten potrzebuje dłuższego urlopu. (( Hank Queensberg ))
+[2.02.2025 21:19:38] [Czat IC] Emiliano Ocampo mówi: Długo cie nie było, Hank.
+[2.02.2025 21:19:31] [Akcja /me] * Emiliano Ocampo przywitał H. Queensberg - skinął do niego głową.
+[2.02.2025 21:19:13] [Komenda] /me przeciągnął się luźno, uśmiechnął się do Ocampo i wyciągnął mu grabę.
+[2.02.2025 21:19:13] [Akcja /me] * Hank Queensberg przeciągnął się luźno, uśmiechnął się do Ocampo i wyciągnął mu grabę.
+[2.02.2025 21:18:46] [Komenda] /u czapka
+[2.02.2025 21:18:35] [Komenda] /w 572 .
+[2.02.2025 21:18:35] [PW] [Hank Queensberg &#8594; Emiliano Ocampo (572)]: .
+[2.02.2025 21:18:28] [Komenda] /id ocampo
+[2.02.2025 21:18:13] [Komenda] /id ocampo
+[2.02.2025 21:15:33] [Komenda] /Z
+[2.02.2025 21:15:30] [Akcja /do] Postać Hank Queensberg przeszła przez drzwi wejściowe [21307] Siłka (Interior: [17019] Special Enforcement Bureau Killhouse)
+[2.02.2025 21:15:29] [Akcja] [Akcja] Wszedł do interioru Special Enforcement Bureau Killhouse (UID 17019)
+[2.02.2025 21:15:23] [Siła] [SIŁA] Wartość siły uległa zmianie: 3915j -> 3920j
+[2.02.2025 21:15:12] [Siła] [SIŁA] Wartość siły uległa zmianie: 3910j -> 3915j
+[2.02.2025 21:15:02] [Siła] [SIŁA] Wartość siły uległa zmianie: 3905j -> 3910j
+[2.02.2025 21:14:52] [Siła] [SIŁA] Wartość siły uległa zmianie: 3900j -> 3905j
+[2.02.2025 21:14:36] [Siła] [SIŁA] Wartość siły uległa zmianie: 3895j -> 3900j
+[2.02.2025 21:14:28] [Siła] [SIŁA] Wartość siły uległa zmianie: 3890j -> 3895j
+[2.02.2025 21:14:22] [Siła] [SIŁA] Wartość siły uległa zmianie: 3885j -> 3890j
+[2.02.2025 21:13:59] [Akcja /do] Postać Hank Queensberg przeszła przez drzwi wyjściowe [21307] Siłka (Interior: [17019] Special Enforcement Bureau Killhouse)
+[2.02.2025 21:13:58] [Akcja] [Akcja] Opuścił interior Special Enforcement Bureau Killhouse (UID 17019)
+[2.02.2025 21:13:57] [Komenda] /Z
+[2.02.2025 21:13:14] [Komenda] /rc 692
+[2.02.2025 21:13:09] [Komenda] /g 1 duty
