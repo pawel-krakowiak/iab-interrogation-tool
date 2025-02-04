@@ -44,11 +44,11 @@ class LogFormatter:
         r"^\[(?P<timestamp>[^\]]+)\]\s+\[(?P<action>[^\]]+)\]\s+(?P<message>.*)$"
     )
 
-    # Regular expression to extract the speaker's name and tone.
-    # This pattern recognizes lines where the message starts with:
-    # "Name mówi:", "Name szepcze:", "Name krzyczy:" or "Name szepcze do Other:".
+    # Regular expression to extract the speaker's prefix.
+    # This pattern recognizes prefixes like:
+    # "Name mówi:", "Name szepcze:", "Name krzyczy:" or "Name szepcze do Other:"
     NAME_PATTERN = re.compile(
-        r"^(?P<name>[A-ZĄĆĘŁŃÓŚŹŻ][\w\s\-\']+?)\s+(?P<tone>mówi|szepcze|krzyczy)(\s+do\s+[A-ZĄĆĘŁŃÓŚŹŻ][\w\s\-\']+?)?:"
+        r"^(?P<name>[A-ZĄĆĘŁŃÓŚŹŻ][\w\s\-\']+?)\s+(?P<tone>mówi|szepcze|krzyczy)(\s+do\s+[A-ZĄĆĘŁŃÓŚŹŻ][\w\s\-\']+?)?:\s*"
     )
 
     def parse_line(self, line: str) -> Optional[Dict[str, str]]:
@@ -63,8 +63,8 @@ class LogFormatter:
                 - 'date': parsed date in YYYY-MM-DD format,
                 - 'time': parsed time in HH:MM:SS format,
                 - 'action': the action string,
-                - 'name': the extracted name if found (empty string otherwise),
-                - 'message': the log message text.
+                - 'prefix': the speaker prefix (e.g., "Lauren Devaughn mówi:") if found, otherwise an empty string,
+                - 'message': the log message text with the prefix removed if applicable.
             Returns None if the line does not match the expected format.
         """
         match = self.LOG_PATTERN.match(line)
@@ -84,18 +84,21 @@ class LogFormatter:
             date_str = ""
             time_str = ""
 
-        # Extract name and tone from the message if possible
-        name = ""
+        # Initialize speaker prefix as empty
+        prefix = ""
         name_match = self.NAME_PATTERN.match(message)
         if name_match:
-            name = name_match.group("name").strip()
+            # Extract the full prefix including the colon and following space(s)
+            prefix = name_match.group(0).strip()
+            # Remove the prefix from the message so it doesn't appear twice
+            message = message[len(prefix) :].strip()
 
         return {
             "timestamp": timestamp_str,
             "date": date_str,
             "time": time_str,
             "action": action,
-            "name": name,
+            "prefix": prefix,
             "message": message,
         }
 
@@ -103,10 +106,10 @@ class LogFormatter:
         """Formats a single log line into an HTML string with syntax highlighting.
 
         The returned HTML highlights:
-            - Timestamp (date/time) in a cool blue.
+            - Timestamp (date/time) in DeepSkyBlue.
             - Action in a color based on its type.
-            - Name (if available) in bold white.
-            - The rest of the message in default text color.
+            - Speaker prefix (if available) in bold white.
+            - The remaining message in light gray.
 
         Args:
             line (str): A single log line.
@@ -119,18 +122,17 @@ class LogFormatter:
             # If parsing fails, return the original line in a preformatted block.
             return f"<pre>{line}</pre>"
 
-        # Colors
+        # Define colors
         timestamp_color = "#00BFFF"  # DeepSkyBlue
         action_color = ACTION_COLOR_MAP.get(
             parsed["action"], ACTION_COLOR_MAP["default"]
         )
-        name_color = "#FFFFFF"  # White
+        prefix_color = "#FFFFFF"  # White
         message_color = "#CCCCCC"  # Light gray
 
-        # HTML formatted parts
         html_parts = []
 
-        # Timestamp (date and time)
+        # Timestamp
         html_parts.append(
             f'<span style="color: {timestamp_color}; font-weight: bold;">'
             f'[{parsed["timestamp"]}]'
@@ -144,18 +146,17 @@ class LogFormatter:
             f"</span> "
         )
 
-        # Optionally, display name if extracted
-        if parsed["name"]:
+        # Speaker prefix (if available) should be displayed once
+        if parsed["prefix"]:
             html_parts.append(
-                f'<span style="color: {name_color}; font-weight: bold;">'
-                f'{parsed["name"]} '
+                f'<span style="color: {prefix_color}; font-weight: bold;">'
+                f'{parsed["prefix"]} '
                 f"</span>"
             )
 
-        # Message (the full message; if a name was extracted, you might want to remove it from the message, but here we keep it)
+        # Message text
         html_parts.append(
             f'<span style="color: {message_color};">' f'{parsed["message"]}' f"</span>"
         )
 
-        # Combine parts
         return "".join(html_parts)
