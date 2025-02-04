@@ -1,5 +1,6 @@
 import logging
 
+
 def setup_logger() -> logging.Logger:
     """Configures and returns the application logger.
 
@@ -13,5 +14,6 @@ def setup_logger() -> logging.Logger:
     handler.setFormatter(formatter)
     logger.addHandler(handler)
     return logger
+
 
 logger = setup_logger()

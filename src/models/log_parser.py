@@ -1,5 +1,6 @@
 import re
-from typing import List, Dict, Set
+from typing import List, Set
+
 
 class LogParser:
     """Handles parsing of log files, extracting messages and unique users."""

@@ -1,6 +1,16 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QFileDialog, QTextEdit, QVBoxLayout, QWidget
+from PyQt6.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QPushButton,
+    QLabel,
+    QFileDialog,
+    QTextEdit,
+    QVBoxLayout,
+    QWidget,
+)
 from src.models.log_parser import LogParser
 from src.models.logger_config import logger
+
 
 class MainWindow(QMainWindow):
     """Main application window handling UI and user interactions."""
@@ -32,12 +42,15 @@ class MainWindow(QMainWindow):
 
     def load_logs(self):
         """Handles log file selection and display."""
-        file_path, _ = QFileDialog.getOpenFileName(self, "Open Log File", "", "Text Files (*.txt)")
+        file_path, _ = QFileDialog.getOpenFileName(
+            self, "Open Log File", "", "Text Files (*.txt)"
+        )
         if file_path:
             logger.info(f"Loaded file: {file_path}")
             parser = LogParser(file_path)
             self.label.setText(f"Loaded: {file_path}")
             self.text_area.setPlainText("\n".join(parser.logs))
+
 
 if __name__ == "__main__":
     app = QApplication([])
