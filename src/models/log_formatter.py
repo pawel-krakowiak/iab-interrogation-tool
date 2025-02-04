@@ -30,10 +30,11 @@ ACTION_COLOR_MAP: Dict[str, str] = {
     "Czat OOC": "#FF8C00",  # Dark Orange
     "Akcja /me": "#ADFF2F",  # GreenYellow
     "Akcja /do": "#00CED1",  # DarkTurquoise
-    "Komenda": "#FF4500",   # OrangeRed
-    "PW": "#DA70D6",        # Orchid
-    "default": "#FFFFFF",   # White (default)
+    "Komenda": "#FF4500",  # OrangeRed
+    "PW": "#DA70D6",  # Orchid
+    "default": "#FFFFFF",  # White (default)
 }
+
 
 class LogFormatter:
     """A class to parse and format log lines with syntax highlighting."""
@@ -94,7 +95,7 @@ class LogFormatter:
             if extra and extra.lower() == "radio":
                 is_radio = True
             # Remove the prefix from the message.
-            message = message[len(prefix):].strip()
+            message = message[len(prefix) :].strip()
 
         return {
             "timestamp": timestamp_str,
@@ -129,16 +130,28 @@ class LogFormatter:
             return f"<pre>{index}: {line}</pre>"
 
         timestamp_color = "#00BFFF"  # DeepSkyBlue
-        action_color: str = ACTION_COLOR_MAP.get(parsed["action"], ACTION_COLOR_MAP["default"])
-        prefix_color = "#FFFFFF"       # White
-        message_color = "#CCCCCC"      # Light gray
+        action_color: str = ACTION_COLOR_MAP.get(
+            parsed["action"], ACTION_COLOR_MAP["default"]
+        )
+        prefix_color = "#FFFFFF"  # White
+        message_color = "#CCCCCC"  # Light gray
 
         html_parts: List[str] = []
-        html_parts.append(f'<span style="color: #AAAAAA; font-weight: bold;">[{index}]</span> ')
-        html_parts.append(f'<span style="color: {timestamp_color}; font-weight: bold;">[{parsed["timestamp"]}]</span> ')
-        html_parts.append(f'<span style="color: {action_color}; font-weight: bold;">[{parsed["action"]}]</span> ')
+        html_parts.append(
+            f'<span style="color: #AAAAAA; font-weight: bold;">[{index}]</span> '
+        )
+        html_parts.append(
+            f'<span style="color: {timestamp_color}; font-weight: bold;">[{parsed["timestamp"]}]</span> '
+        )
+        html_parts.append(
+            f'<span style="color: {action_color}; font-weight: bold;">[{parsed["action"]}]</span> '
+        )
         if parsed.get("prefix"):
-            html_parts.append(f'<span style="color: {prefix_color}; font-weight: bold;">{parsed["prefix"]} </span>')
-        html_parts.append(f'<span style="color: {message_color};">{parsed["message"]}</span>')
+            html_parts.append(
+                f'<span style="color: {prefix_color}; font-weight: bold;">{parsed["prefix"]} </span>'
+            )
+        html_parts.append(
+            f'<span style="color: {message_color};">{parsed["message"]}</span>'
+        )
 
         return "".join(html_parts)
