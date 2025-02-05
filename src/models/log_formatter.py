@@ -47,7 +47,7 @@ class LogFormatter:
         r"(?:\s+do\s+[A-ZĄĆĘŁŃÓŚŹŻ][\w\s\-\']+?)?:\s*"
     )
 
-    def parse_line(self, line: str) -> Optional[Dict[str, str]]:
+    def parse_line(self, line: str):
         """
         Parses a single log line into structured data.
         Returns None if the format does not match LOG_PATTERN.
@@ -71,7 +71,7 @@ class LogFormatter:
             "action": action,
             "prefix": prefix,
             "message": message,
-            "is_radio": str(is_radio).lower(),
+            "is_radio": is_radio, # noqa
         }
 
     def _parse_timestamp(self, timestamp: str) -> Tuple[str, str]:

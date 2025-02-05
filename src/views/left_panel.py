@@ -268,7 +268,6 @@ class LeftPanel(QWidget):
         """
         show_related = self.show_only_related_checkbox.isChecked()
 
-        # Emit signal with updated values
         self.namesUpdated.emit(
             list(self._interviewer_order), list(self._interrogated_order), show_related
         )
