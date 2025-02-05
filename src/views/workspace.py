@@ -102,7 +102,7 @@ class Workspace(QWidget):
         - Matches names only when they are the speaker (not just mentioned)
         - Does NOT apply tags to 'Komenda' (starts with '/' or '.') or 'PW' (starts with '[')
         - Applies all filtering toggles correctly
-        - Supports 'Tog Action Tags' to hide action names (e.g. '[Czat IC]')
+        - Fixes 'Show Only Related' to filter out unrelated radio messages
         """
         if not self._raw_logs:
             self._text_edit.setHtml("<p>No logs loaded</p>")
@@ -146,6 +146,7 @@ class Workspace(QWidget):
             action = parsed["action"]
             prefix = parsed.get("prefix", "").strip()
             message = parsed["message"].strip()
+            is_radio_message = parsed.get("is_radio", False)
 
             # 🔹 FILTERS BASED ON TOGGLES
             if action == "Akcja /me" and not filter_me:
@@ -160,11 +161,11 @@ class Workspace(QWidget):
                 continue
 
             # 🔹 FILTER RADIO
-            if not filter_radio and ("Kanał:" in message):
+            if not filter_radio and is_radio_message:
                 continue
 
             # 🔹 FILTER 'SHOW ONLY RELATED'
-            always_show = action == "Komenda" or parsed.get("is_radio", False)
+            always_show = action == "Komenda"
             combined_text = f"{prefix} {message}".strip().lower()
             matching_I = [
                 nm.lower() for nm in selected_I if nm.lower() in combined_text
@@ -174,14 +175,20 @@ class Workspace(QWidget):
             ]
 
             if show_only_related and not always_show and not (matching_I or matching_O):
-                continue
+                if (
+                    is_radio_message
+                    and prefix.lower() not in selected_I
+                    and prefix.lower() not in selected_O
+                ):
+                    continue  # Hides radio messages if the speaker is not in the selected list
+                if not is_radio_message:
+                    continue  # Hides non-radio messages if they are unrelated
 
             # 🔹 IGNORE [I] and [O] FOR COMMANDS AND PW
             is_command_or_pw = (
                 message.startswith("/")
                 or message.startswith(".")
                 or message.startswith("[")
-                and not message.startswith("[.")
             )
 
             # 🔹 ADDING PREFIXES [I] AND [O] – only if the person WROTE the message
