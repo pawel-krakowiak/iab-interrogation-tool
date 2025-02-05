@@ -99,7 +99,7 @@ class LogFormatter:
         prefix = match.group(0).strip()
         extra = match.group("extra") or ""
         is_radio = extra.lower() == "radio" or "Kanał:" in message
-        new_message = message[len(prefix):].strip()
+        new_message = message[len(prefix):].strip()  # noqa
         return prefix, is_radio, new_message
 
     def format_line(self, line: str, index: int) -> str:

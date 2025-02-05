@@ -28,7 +28,7 @@ def test_parse_line_radio(formatter: LogFormatter) -> None:
     Test parsing a radio call log line.
     Expected to flag the line as radio and extract prefix and message.
     """
-    line = "[2.02.2025 22:20:48] [Czat IC] John Doe mówi (radio): This is a radio call." # noqa
+    line = "[2.02.2025 22:20:48] [Czat IC] John Doe mówi (radio): This is a radio call."  # noqa
     result = formatter.parse_line(line)
     assert result is not None
     # The prefix should include "(radio)" and is_radio should be True.
