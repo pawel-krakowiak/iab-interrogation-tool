@@ -93,10 +93,12 @@ class LogFormatter:
         """
         match = self.NAME_PATTERN.match(message)
         if not match:
+            if "Kanał:" in message:
+                return "", True, message
             return "", False, message
         prefix = match.group(0).strip()
         extra = match.group("extra") or ""
-        is_radio = extra.lower() == "radio"
+        is_radio = extra.lower() == "radio" or "Kanał:" in message
         new_message = message[len(prefix) :].strip()
         return prefix, is_radio, new_message
 

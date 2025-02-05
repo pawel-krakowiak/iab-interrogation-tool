@@ -8,6 +8,7 @@ Displays logs in an HTML table with advanced filtering logic:
 - Only hide lines that don't involve them if show_only_related is True.
 """
 
+import re
 import logging
 from typing import List, Dict, Optional
 
@@ -97,8 +98,8 @@ class Workspace(QWidget):
     def update_view(self) -> None:
         """
         Rebuilds the workspace display based on toggles, ordering, and selected names.
-        - '[I]' (green) prefix for interviewers
-        - '[O]' (red) prefix for interrogated persons
+        - '[I-1]', '[I-2]' for multiple interviewers
+        - '[O-1]', '[O-2]' for multiple interrogated
         - Matches names only when they are the speaker (not just mentioned)
         - Does NOT apply tags to 'Komenda' (starts with '/' or '.') or 'PW' (starts with '[')
         - Applies all filtering toggles correctly
@@ -129,10 +130,13 @@ class Workspace(QWidget):
         table_rows = []
         row_index = 1
 
-        # Selected persons
-        selected_I = set(self._interviewer_order)
-        selected_O = set(self._interrogated_order)
-
+        # Selected persons with index mapping (ordering preserved)
+        selected_I = {
+            name.lower(): idx + 1 for idx, name in enumerate(self._interviewer_order)
+        }
+        selected_O = {
+            name.lower(): idx + 1 for idx, name in enumerate(self._interrogated_order)
+        }
         for line in logs_to_iterate:
             parsed = self._formatter.parse_line(line)
             if not parsed:
@@ -167,12 +171,8 @@ class Workspace(QWidget):
             # 🔹 FILTER 'SHOW ONLY RELATED'
             always_show = action == "Komenda"
             combined_text = f"{prefix} {message}".strip().lower()
-            matching_I = [
-                nm.lower() for nm in selected_I if nm.lower() in combined_text
-            ]
-            matching_O = [
-                nm.lower() for nm in selected_O if nm.lower() in combined_text
-            ]
+            matching_I = [name for name in selected_I if name in combined_text]
+            matching_O = [name for name in selected_O if name in combined_text]
 
             if show_only_related and not always_show and not (matching_I or matching_O):
                 if (
@@ -189,16 +189,42 @@ class Workspace(QWidget):
                 message.startswith("/")
                 or message.startswith(".")
                 or message.startswith("[")
+                and not message.startswith("[.")
             )
 
-            # 🔹 ADDING PREFIXES [I] AND [O] – only if the person WROTE the message
+            # 🔹 ADDING PREFIXES [I-1], [I-2] and [O-1], [O-2]
             tag = ""
             if not is_command_or_pw:
-                full_text = f"{prefix} {message}".strip()
-                if any(name.lower() in full_text.lower() for name in selected_I):
-                    tag = '<span style="color: #00FF00; font-weight: bold;">[I]</span> '
-                elif any(name.lower() in full_text.lower() for name in selected_O):
-                    tag = '<span style="color: #FF0000; font-weight: bold;">[O]</span> '
+                # Extract only the speaker's name, ignoring different speaking verbs
+                speaker_name = ""
+                if not prefix and "[Kanał:" in message:
+                    name_pattern = re.compile(
+                        r"\[Kanał: \d+\] ([A-Z][a-z]+ [A-Z][a-z]+):"
+                    )
+                    if match := name_pattern.search(message):
+                        speaker_name = match.group(1).lower()
+                else:
+                    speaker_name = (
+                        prefix.lower()
+                        .replace(" mówi:", "")
+                        .replace(" mówi (radio):", "")
+                        .replace(" mówi (megafon):", "")
+                        .replace(" mówi (krótkofalówka):", "")
+                        .replace(" krzyczy:", "")
+                        .replace(" szepcze:", "")
+                        .strip()
+                    )
+
+                if speaker_name in selected_I:
+                    addnotation = (
+                        f"-{selected_I[speaker_name]}" if len(selected_I) > 1 else ""
+                    )
+                    tag = f'<span style="color: #00FF00; font-weight: bold;">[I{addnotation}]</span> '
+                elif speaker_name in selected_O:
+                    addnotation = (
+                        f"-{selected_O[speaker_name]}" if len(selected_O) > 1 else ""
+                    )
+                    tag = f'<span style="color: #FF0000; font-weight: bold;">[O{addnotation}]</span> '
 
             # 🔹 REMOVE ACTION TAGS IF TOG ACTION TAGS IS OFF
             if not filter_action_tags:

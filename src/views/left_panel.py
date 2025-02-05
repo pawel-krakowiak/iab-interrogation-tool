@@ -69,7 +69,7 @@ class LeftPanel(QWidget):
         self.logo_label = QLabel(self)
         self.load_button = QPushButton("📂 Load Logs", self)
 
-        self.interviewer_group = QGroupBox("Interviewer [I]", self)
+        self.interviewer_group = QGroupBox("Interviewer/LEA [I]", self)
         self.interviewer_layout = QVBoxLayout()
         self.interviewer_group.setLayout(self.interviewer_layout)
 
