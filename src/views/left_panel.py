@@ -198,8 +198,11 @@ class LeftPanel(QWidget):
         """
         raw_name = raw_display_text.split(" (")[0]  # Remove frequency count
 
-        is_checked = state == Qt.CheckState.Checked
-        logger.debug(f"🟢 Interviewer Checkbox Clicked -> {raw_name}, State: {state}")
+        # Ensure correct checkbox state
+        is_checked = state == Qt.CheckState.Checked.value
+        logger.debug(
+            f"🟢 Interviewer Checkbox Clicked -> {raw_name}, State: {state}, is_checked: {is_checked}"
+        )
 
         if is_checked:
             if raw_name not in self._interviewer_order:
@@ -216,10 +219,10 @@ class LeftPanel(QWidget):
                 self._interviewer_order.remove(raw_name)
                 logger.debug(f"❌ Removed from Interviewers: {raw_name}")
 
-            # Re-enable in Interrogated
+            # Re-enable in Interrogated (only if it wasn't manually disabled)
             if raw_name in self.interrogated_checkboxes:
                 self.interrogated_checkboxes[raw_name].setEnabled(True)
-                logger.debug(f"🔓 Enabled '{raw_name}' in Interrogated")
+                logger.debug(f"🔓 Re-enabled '{raw_name}' in Interrogated")
 
         self._emit_names_updated()
 
@@ -230,8 +233,11 @@ class LeftPanel(QWidget):
         """
         raw_name = raw_display_text.split(" (")[0]  # Remove frequency count
 
-        is_checked = state == Qt.CheckState.Checked
-        logger.debug(f"🔴 Interrogated Checkbox Clicked -> {raw_name}, State: {state}")
+        # Ensure correct checkbox state
+        is_checked = state == Qt.CheckState.Checked.value
+        logger.debug(
+            f"🔴 Interrogated Checkbox Clicked -> {raw_name}, State: {state}, is_checked: {is_checked}"
+        )
 
         if is_checked:
             if raw_name not in self._interrogated_order:
@@ -248,10 +254,10 @@ class LeftPanel(QWidget):
                 self._interrogated_order.remove(raw_name)
                 logger.debug(f"❌ Removed from Interrogated: {raw_name}")
 
-            # Re-enable in Interviewer
+            # Re-enable in Interviewer (only if it wasn't manually disabled)
             if raw_name in self.interviewer_checkboxes:
                 self.interviewer_checkboxes[raw_name].setEnabled(True)
-                logger.debug(f"🔓 Enabled '{raw_name}' in Interviewer")
+                logger.debug(f"🔓 Re-enabled '{raw_name}' in Interviewer")
 
         self._emit_names_updated()
 
