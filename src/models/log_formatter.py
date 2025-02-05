@@ -13,14 +13,14 @@ from typing import Optional, Dict, Tuple
 logger = logging.getLogger(__name__)
 
 ACTION_COLOR_MAP: Dict[str, str] = {
-    "Czat IC": "#FFD700",  # Gold
-    "Czat OOC": "#FF8C00",  # Dark Orange
-    "Akcja /me": "#ADFF2F",  # GreenYellow
-    "Akcja /do": "#00CED1",  # DarkTurquoise
-    "Komenda": "#FF4500",  # OrangeRed
-    "PW": "#DA70D6",  # Orchid
-    "default": "#FFFFFF",  # Fallback
-}
+        "Czat IC": "#FFD700",  # Gold
+        "Czat OOC": "#FF8C00",  # Dark Orange
+        "Akcja /me": "#ADFF2F",  # GreenYellow
+        "Akcja /do": "#00CED1",  # DarkTurquoise
+        "Komenda": "#FF4500",  # OrangeRed
+        "PW": "#DA70D6",  # Orchid
+        "default": "#FFFFFF",  # Fallback
+    }
 
 
 class LogFormatter:
@@ -55,7 +55,8 @@ class LogFormatter:
         match = self.LOG_PATTERN.match(line)
         if not match:
             logger.debug("No match for LOG_PATTERN: %s", line)
-            return None
+            return {}
+
 
         timestamp_str = match.group("timestamp")
         action = match.group("action").strip()
@@ -94,7 +95,6 @@ class LogFormatter:
         match = self.NAME_PATTERN.match(message)
         if not match:
             return "", False, message
-
         prefix = match.group(0).strip()
         extra = match.group("extra") or ""
         is_radio = extra.lower() == "radio"

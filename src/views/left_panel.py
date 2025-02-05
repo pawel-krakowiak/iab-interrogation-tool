@@ -124,9 +124,11 @@ class LeftPanel(QWidget):
         """
         Opens a file dialog to load logs. Emits logsLoaded, then populates name selections.
         """
-        file_path, _ = QFileDialog.getOpenFileName(
-            self, "Open Log File", "", "Text Files (*.txt)"
-        )
+        file_path, _ = QFileDialog.getOpenFileName(self, "Open Log File", "", "Text Files (*.txt)")
+        if not file_path:
+            logger.info("No file selected.")
+            return
+
         if file_path:
             logger.info("📂 Loaded file: %s", file_path)
             parser = LogParser(file_path)
@@ -136,9 +138,9 @@ class LeftPanel(QWidget):
 
     def _populate_name_selections(self) -> None:
         """
-        Creates checkboxes for each discovered name in logs, sorted by frequency.
+        Tworzy checkboxy dla każdej wykrytej osoby w logach, sortując je według liczby wystąpień.
         """
-        # Clear old checkboxes
+        # Czyszczenie starej listy
         for layout in (self.interviewer_layout, self.interrogated_layout):
             while layout.count():
                 item = layout.takeAt(0)
@@ -151,6 +153,7 @@ class LeftPanel(QWidget):
         self._interviewer_order.clear()
         self._interrogated_order.clear()
 
+        # Analiza logów i zliczanie osób
         freq = {}
         formatter = LogFormatter()
         for line in self.raw_logs:
@@ -161,91 +164,79 @@ class LeftPanel(QWidget):
                     raw_name = match.group("name")
                     freq[raw_name] = freq.get(raw_name, 0) + 1
 
-        # Sort names by frequency
+        # Sortowanie według liczby wystąpień
         sorted_names = sorted(freq.items(), key=lambda x: -x[1])
+
         for raw_name, count in sorted_names:
             display_text = f"{raw_name} ({count})"
             cb_i = QCheckBox(display_text, self)
             cb_o = QCheckBox(display_text, self)
 
-            # Connect with the raw_name
+            # Obsługa wzajemnego wykluczania wyboru
             cb_i.stateChanged.connect(partial(self._on_interviewer_changed, raw_name))
             cb_o.stateChanged.connect(partial(self._on_interrogated_changed, raw_name))
 
-            # Add to group layouts
+            # Dodanie do układu
             self.interviewer_layout.addWidget(cb_i)
             self.interrogated_layout.addWidget(cb_o)
 
-            # Store references
+            # Przechowywanie referencji do checkboxów
             self.interviewer_checkboxes[raw_name] = cb_i
             self.interrogated_checkboxes[raw_name] = cb_o
 
-        # Emit updated names
+        # Emitowanie zaktualizowanej listy
         self._emit_names_updated()
+
 
     def _on_interviewer_changed(self, raw_name: str, state: int) -> None:
         """
-        Handles checking/unchecking of Interviewer checkboxes.
-        Ensures the same name is disabled in Interrogated.
+        Obsługuje zaznaczenie osoby jako Interviewer i dezaktywuje ją w Interrogated.
         """
         is_checked = state == Qt.CheckState.Checked
-        logger.debug(
-            f"DEBUG: Interviewer Checkbox Clicked -> {raw_name}, State: {state}"
-        )
-
+    
         if is_checked:
             if raw_name not in self._interviewer_order:
                 self._interviewer_order.append(raw_name)
-                logger.debug(f"✅ Added to Interviewers: {raw_name}")
-
-            # Disable in Interrogated
+    
+            # Wyłącz checkbox w Interrogated
             if raw_name in self.interrogated_checkboxes:
                 self.interrogated_checkboxes[raw_name].setChecked(False)
                 self.interrogated_checkboxes[raw_name].setEnabled(False)
-                logger.debug(f"🚫 Disabled '{raw_name}' in Interrogated")
         else:
             if raw_name in self._interviewer_order:
                 self._interviewer_order.remove(raw_name)
-                logger.debug(f"❌ Removed from Interviewers: {raw_name}")
-
-            # Re-enable in Interrogated
+    
+            # Włącz checkbox w Interrogated
             if raw_name in self.interrogated_checkboxes:
                 self.interrogated_checkboxes[raw_name].setEnabled(True)
-                logger.debug(f"🔓 Enabled '{raw_name}' in Interrogated")
-
+    
         self._emit_names_updated()
-
+    
+    
     def _on_interrogated_changed(self, raw_name: str, state: int) -> None:
         """
-        Handles checking/unchecking of Interrogated checkboxes.
-        Ensures the same name is disabled in Interviewer.
+        Obsługuje zaznaczenie osoby jako Interrogated i dezaktywuje ją w Interviewer.
         """
         is_checked = state == Qt.CheckState.Checked
-        logger.debug(
-            f"DEBUG: Interrogated Checkbox Clicked -> {raw_name}, State: {state}"
-        )
-
+    
         if is_checked:
             if raw_name not in self._interrogated_order:
                 self._interrogated_order.append(raw_name)
-                logger.debug(f"✅ Added to Interrogated: {raw_name}")
-
-            # Disable in Interviewer
+    
+            # Wyłącz checkbox w Interviewer
             if raw_name in self.interviewer_checkboxes:
                 self.interviewer_checkboxes[raw_name].setChecked(False)
                 self.interviewer_checkboxes[raw_name].setEnabled(False)
-                logger.debug(f"🚫 Disabled '{raw_name}' in Interviewer")
         else:
             if raw_name in self._interrogated_order:
                 self._interrogated_order.remove(raw_name)
-                logger.debug(f"❌ Removed from Interrogated: {raw_name}")
-
-            # Re-enable in Interviewer
+    
+            # Włącz checkbox w Interviewer
             if raw_name in self.interviewer_checkboxes:
                 self.interviewer_checkboxes[raw_name].setEnabled(True)
-                logger.debug(f"🔓 Enabled '{raw_name}' in Interviewer")
-
+    
         self._emit_names_updated()
+
 
     def _emit_names_updated(self) -> None:
         """

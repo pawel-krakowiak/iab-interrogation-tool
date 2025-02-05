@@ -9,6 +9,7 @@ Contains:
 """
 
 import logging
+from functools import partial
 from typing import List, Dict
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton
 from PyQt6.QtGui import QFont
@@ -102,9 +103,7 @@ class RightPanel(QWidget):
 
         # Connect each toggle button with its handler
         for name, btn in self._toggles.items():
-            btn.toggled.connect(
-                lambda checked, n=name: self._on_toggle_changed(n, checked)
-            )
+            btn.toggled.connect(partial(self._on_toggle_changed, name))
 
     # -------------------- ORDER --------------------
 
@@ -147,7 +146,8 @@ class RightPanel(QWidget):
         logger.debug(f"📂 Logs Loaded -> {len(logs)} entries")
         self._raw_logs = logs
         for btn in self._toggles.values():
-            btn.setEnabled(True)
+            if not btn.isEnabled():
+                btn.setEnabled(True)
 
         # By default, set all toggles to True (matching old behavior)
         for name in self._toggle_names:

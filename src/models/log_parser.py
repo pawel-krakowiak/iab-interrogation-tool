@@ -17,7 +17,7 @@ class LogParser:
     Parses a log file, storing all lines and detecting unique users by pattern.
     """
 
-    USER_PATTERN = re.compile(r"(\w+ \w+) mówi:")
+    USER_PATTERN = re.compile(r"([\w\s\-]+?)\s+mówi(?:\s+\(([^)]+)\))?:")
 
     def __init__(self, file_path: str) -> None:
         """
@@ -33,20 +33,18 @@ class LogParser:
     def _load_logs(self) -> None:
         """Loads logs from the file and extracts unique users."""
         if not os.path.isfile(self.file_path):
-            logger.error("File not found: %s", self.file_path)
-            raise ValueError(f"File not found: {self.file_path}")
+            logger.error(f"File not found: {self.file_path}")
+            raise FileNotFoundError(f"File not found: {self.file_path}")
 
-        with open(self.file_path, "r", encoding="utf-8") as file:
-            for line in file:
-                self.logs.append(line.strip())
-                match = self.USER_PATTERN.search(line)
-                if match:
-                    user = match.group(1)
-                    self.users.add(user)
-                    if user in self.user_frequencies:
-                        self.user_frequencies[user] += 1
-                    else:
-                        self.user_frequencies[user] = 1
+        try:
+            with open(self.file_path, "r", encoding="utf-8") as file:
+                for line in file:
+                    self.logs.append(line.strip())
+                    self._extract_user(line)
+        except OSError as e:
+            logger.error(f"Error loading file {self.file_path}: {e}")
+            raise
+
 
     def _extract_user(self, line: str) -> None:
         """Extracts unique users from a line based on USER_PATTERN."""
