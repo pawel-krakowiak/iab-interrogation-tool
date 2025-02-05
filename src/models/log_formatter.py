@@ -13,28 +13,28 @@ from typing import Optional, Dict, Tuple
 logger = logging.getLogger(__name__)
 
 ACTION_COLOR_MAP: Dict[str, str] = {
-        "Czat IC": "#FFD700",   # Gold
-        "Czat OOC": "#FF8C00",  # Dark Orange
-        "Akcja /me": "#ADFF2F", # GreenYellow
-        "Akcja /do": "#00CED1", # DarkTurquoise
-        "Komenda": "#FF4500",   # OrangeRed
-        "PW": "#DA70D6",        # Orchid
-        "default": "#FFFFFF",   # Fallback
-    }
+    "Czat IC": "#FFD700",  # Gold
+    "Czat OOC": "#FF8C00",  # Dark Orange
+    "Akcja /me": "#ADFF2F",  # GreenYellow
+    "Akcja /do": "#00CED1",  # DarkTurquoise
+    "Komenda": "#FF4500",  # OrangeRed
+    "PW": "#DA70D6",  # Orchid
+    "default": "#FFFFFF",  # Fallback
+}
+
 
 class LogFormatter:
     """Parses and formats log lines into HTML or structured data."""
 
     ACTION_COLOR_MAP: Dict[str, str] = {
-            "Czat IC": "#FFD700",   # Gold
-            "Czat OOC": "#FF8C00",  # Dark Orange
-            "Akcja /me": "#ADFF2F", # GreenYellow
-            "Akcja /do": "#00CED1", # DarkTurquoise
-            "Komenda": "#FF4500",   # OrangeRed
-            "PW": "#DA70D6",        # Orchid
-            "default": "#FFFFFF",   # Fallback
-        }
-
+        "Czat IC": "#FFD700",  # Gold
+        "Czat OOC": "#FF8C00",  # Dark Orange
+        "Akcja /me": "#ADFF2F",  # GreenYellow
+        "Akcja /do": "#00CED1",  # DarkTurquoise
+        "Komenda": "#FF4500",  # OrangeRed
+        "PW": "#DA70D6",  # Orchid
+        "default": "#FFFFFF",  # Fallback
+    }
 
     LOG_PATTERN = re.compile(
         r"^\[(?P<timestamp>[^\]]+)\]\s+\[(?P<action>[^\]]+)\]\s+(?P<message>.*)$"
@@ -98,7 +98,7 @@ class LogFormatter:
         prefix = match.group(0).strip()
         extra = match.group("extra") or ""
         is_radio = extra.lower() == "radio"
-        new_message = message[len(prefix):].strip()
+        new_message = message[len(prefix) :].strip()
         return prefix, is_radio, new_message
 
     def format_line(self, line: str, index: int) -> str:
@@ -112,7 +112,9 @@ class LogFormatter:
             return f"<pre>{index}: {line}</pre>"
 
         timestamp_color = "#00BFFF"
-        action_color = self.ACTION_COLOR_MAP.get(parsed["action"], self.ACTION_COLOR_MAP["default"])
+        action_color = self.ACTION_COLOR_MAP.get(
+            parsed["action"], self.ACTION_COLOR_MAP["default"]
+        )
         prefix_color = "#FFFFFF"
         message_color = "#CCCCCC"
 

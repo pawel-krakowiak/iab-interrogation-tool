@@ -46,7 +46,9 @@ class Workspace(QWidget):
         self._text_edit = QTextEdit()
         self._text_edit.setReadOnly(True)
         self._text_edit.setFont(QFont("Courier New", 10))
-        self._text_edit.setLineWrapMode(QTextEdit.LineWrapMode.NoWrap)  # horizontal scroll
+        self._text_edit.setLineWrapMode(
+            QTextEdit.LineWrapMode.NoWrap
+        )  # horizontal scroll
         self._text_edit.setStyleSheet(
             "background-color: #0F1B29; color: #FFD700; border: 1px solid #555;"
         )
@@ -59,12 +61,12 @@ class Workspace(QWidget):
     def set_raw_logs(self, logs: List[str]) -> None:
         """Store the raw logs for display."""
         self._raw_logs = logs
-
-
-    def on_filter_toggles_updated(self, toggles: Dict[str, bool]) -> None:
-        self._toggles = toggles
         self.update_view()
 
+    def on_filter_toggles_updated(self, toggles: Dict[str, bool]) -> None:
+        """Updates filter toggles and refreshes the log view."""
+        self._toggles = toggles
+        self.update_view()
 
     def on_order_changed(self, order: str) -> None:
         """ASC or DESC from the right panel."""
@@ -77,7 +79,7 @@ class Workspace(QWidget):
         self,
         interviewer_order: List[str],
         interrogated_order: List[str],
-        show_related: bool
+        show_related: bool,
     ) -> None:
         """
         Receives the (ordered) interviewers, (ordered) interrogated,
@@ -135,23 +137,17 @@ class Workspace(QWidget):
             # If unrecognized
             if not parsed:
                 if filter_unrecognized:
-                    # Show as <pre>
-                    row_html = (
-                        f"<td style='text-align: right; padding: 2px 5px;'>{row_index}</td>"
-                        f"<td><pre style='margin: 0;'>{line}</pre></td>"
-                    )
+                    row_html = f"<td>{row_index}</td><td><pre>{line}</pre></td>"
                     table_rows.append(f"<tr>{row_html}</tr>")
                     row_index += 1
                 continue
 
             # Radio filter
-            if not filter_radio:
-                if (parsed.get("is_radio", False)
-                    or "** [Kanał:" in line
-                    or parsed["message"].lstrip().startswith("Audycja")):
-                    continue
+            if not filter_radio and parsed.get("is_radio", False):
+                continue
 
             action = parsed["action"]
+
             # Action-based filters
             if action == "Akcja /me" and not filter_me:
                 continue
@@ -163,80 +159,71 @@ class Workspace(QWidget):
                 continue
             if action == "Komenda" and not filter_commands:
                 continue
-            # If not recognized and user doesn't want unrecognized => skip
-            if action not in self._formatter.ACTION_COLOR_MAP and not filter_unrecognized:
-                continue
 
             # 'Show only related' logic:
-            # lines with "Komenda" or is_radio are always shown
-            def always_show(p: Dict[str, str]) -> bool:
-                return p["action"] == "Komenda" or p.get("is_radio", False)
+            # Lines with "Komenda" or is_radio are always shown
+            always_show = parsed["action"] == "Komenda" or parsed.get("is_radio", False)
+            combined_text = (
+                f"{parsed.get('prefix', '')} {parsed.get('message', '')}".lower()
+            )
+            matching_I = [
+                nm.lower() for nm in selected_I if nm.lower() in combined_text
+            ]
+            matching_O = [
+                nm.lower() for nm in selected_O if nm.lower() in combined_text
+            ]
 
-            combined_text = (parsed.get("prefix", "") + " " + parsed.get("message", "")).lower()
-            matching_I = [nm.lower() for nm in selected_I if nm.lower() in combined_text]
-            matching_O = [nm.lower() for nm in selected_O if nm.lower() in combined_text]
-
-            # Build the [I]/[I1]/[O]/[O2] tags unconditionally
+            # Build the [I]/[O] tags
             tag = ""
             if matching_I:
-                if len(matching_I) == 1:
-                    tag += "[I] "
-                else:
-                    for i, _ in enumerate(sorted(matching_I), start=1):
-                        tag += f"[I{i}] "
+                tag += (
+                    "[I] "
+                    if len(matching_I) == 1
+                    else "".join(
+                        f"[I{i}] " for i, _ in enumerate(sorted(matching_I), start=1)
+                    )
+                )
             if matching_O:
-                if len(matching_O) == 1:
-                    tag += "[O] "
-                else:
-                    for i, _ in enumerate(sorted(matching_O), start=1):
-                        tag += f"[O{i}] "
-            # If 'show only related' is on, skip if no match
-            if show_only_related and not always_show(parsed):
-                if not matching_I and not matching_O:
-                    continue
+                tag += (
+                    "[O] "
+                    if len(matching_O) == 1
+                    else "".join(
+                        f"[O{i}] " for i, _ in enumerate(sorted(matching_O), start=1)
+                    )
+                )
+
+            # If 'Show Only Related' is enabled, filter out unrelated logs
+            if show_only_related and not always_show and not (matching_I or matching_O):
+                continue
 
             # Build timestamp
             date_part = parsed.get("date", "")
             time_part = parsed.get("time", "")
-            new_timestamp = ""
-            if show_date and date_part:
-                new_timestamp += date_part
-            if show_hour and time_part:
-                if new_timestamp:
-                    new_timestamp += " "
-                new_timestamp += time_part
-            if new_timestamp:
-                new_timestamp = f"[{new_timestamp}]"
-
-            timestamp_html = f'<span style="color: #00BFFF; font-weight: bold;">{new_timestamp}</span>'
-            action_color = self._formatter.ACTION_COLOR_MAP.get(action, self._formatter.ACTION_COLOR_MAP["default"])
-            action_html = f'<span style="color: {action_color}; font-weight: bold;">[{action}]</span>'
-
-            prefix_html = ""
-            if parsed.get("prefix"):
-                prefix_html = f'<span style="color: #FFFFFF; font-weight: bold;">{parsed["prefix"]} </span>'
-
-            message_html = f'<span style="color: #CCCCCC;">{parsed["message"]}</span>'
-
-            tag_html = ""
-            if tag:
-                tag_html = f'<span style="color: #FF69B4; font-weight: bold;">{tag}</span> '
-
-            log_line_html = " ".join([
-                timestamp_html,
-                action_html,
-                tag_html,
-                prefix_html,
-                message_html
-            ])
-
-            row_html = (
-                f"<td style='text-align: right; padding: 2px 5px; vertical-align: top;'>{row_index}</td>"
-                f"<td style='padding: 2px 5px;'>{log_line_html}</td>"
+            new_timestamp = (
+                f"[{date_part} {time_part}]"
+                if (show_date and date_part) or (show_hour and time_part)
+                else ""
             )
+
+            # Format log line
+            timestamp_html = f'<span style="color: #00BFFF; font-weight: bold;">{new_timestamp}</span>'
+            action_color = ACTION_COLOR_MAP.get(action, ACTION_COLOR_MAP["default"])
+            action_html = f'<span style="color: {action_color}; font-weight: bold;">[{action}]</span>'
+            prefix_html = (
+                f'<span style="color: #FFFFFF; font-weight: bold;">{parsed["prefix"]} </span>'
+                if parsed.get("prefix")
+                else ""
+            )
+            message_html = f'<span style="color: #CCCCCC;">{parsed["message"]}</span>'
+            tag_html = (
+                f'<span style="color: #FF69B4; font-weight: bold;">{tag}</span> '
+                if tag
+                else ""
+            )
+
+            row_html = f"<td>{row_index}</td><td>{timestamp_html} {action_html} {tag_html} {prefix_html} {message_html}</td>"
             table_rows.append(f"<tr>{row_html}</tr>")
             row_index += 1
 
-        table_html = "<table style='width: 100%; border-collapse: collapse;'>" \
-                     + "".join(table_rows) + "</table>"
+        table_html = "<table>" + "".join(table_rows) + "</table>"
         self._text_edit.setHtml(table_html)

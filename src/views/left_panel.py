@@ -1,12 +1,11 @@
 """
 left_panel.py
 
-Contains:
+Handles:
 - Logo and 'Load Logs' button
-- QGroupBox for Interviewer and Interrogated (wrapped in scroll areas, if desired)
+- QGroupBox for Interviewer and Interrogated (with scroll areas)
 - 'Show only related' checkbox
-- Ordered selection logic for I/O
-- Disables the same name in the other group upon selection
+- Disables selection of the same person in both groups
 - Emits logsLoaded(List[str]) and namesUpdated(...) signals
 """
 
@@ -16,8 +15,14 @@ from functools import partial
 from typing import List, Dict
 
 from PyQt6.QtWidgets import (
-    QWidget, QLabel, QPushButton, QVBoxLayout,
-    QGroupBox, QCheckBox, QFileDialog, QScrollArea
+    QWidget,
+    QLabel,
+    QPushButton,
+    QVBoxLayout,
+    QGroupBox,
+    QCheckBox,
+    QFileDialog,
+    QScrollArea,
 )
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import Qt, pyqtSignal
@@ -30,19 +35,21 @@ logger = logging.getLogger(__name__)
 
 class LeftPanel(QWidget):
     """
-    Left side panel with:
+    Left-side panel with:
       - Logo
       - Load Logs button
-      - Interviewer/Interrogated group boxes (optionally scrollable)
+      - Interviewer/Interrogated selection (with mutual exclusion)
       - 'Show only related' checkbox
     Emits:
-      - logsLoaded(List[str]): once logs are loaded from file
-      - namesUpdated(List[str], List[str], bool): 
-        * ordered list of interviewers, ordered list of interrogated, and show_only_related
+      - logsLoaded(List[str]): once logs are loaded
+      - namesUpdated(List[str], List[str], bool):
+        * ordered list of interviewers, ordered list of interrogated, and show_only_related flag
     """
 
-    logsLoaded = pyqtSignal(list)
-    namesUpdated = pyqtSignal(list, list, bool)
+    logsLoaded = pyqtSignal(list)  # Emits raw log list
+    namesUpdated = pyqtSignal(
+        list, list, bool
+    )  # Emits updated interviewers/interrogated lists
 
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
@@ -50,7 +57,7 @@ class LeftPanel(QWidget):
 
         self.raw_logs: List[str] = []
 
-        # Lists track the order in which interviewers/interrogated are selected
+        # Track selected interviewers/interrogated
         self._interviewer_order: List[str] = []
         self._interrogated_order: List[str] = []
 
@@ -78,7 +85,7 @@ class LeftPanel(QWidget):
     def _init_ui(self) -> None:
         """
         Sets up layout: logo, load button, group boxes, 'Show only related'.
-        Wrap group boxes in scroll areas if you'd like them to be scrollable.
+        Wraps group boxes in scroll areas.
         """
         # Logo
         logo_path = os.path.join(
@@ -88,7 +95,7 @@ class LeftPanel(QWidget):
         self.logo_label.setPixmap(pixmap)
         self.logo_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        # Create scroll areas for each group (optional, for large sets of names)
+        # Create scroll areas for each group
         interviewer_scroll = QScrollArea(self)
         interviewer_scroll.setWidget(self.interviewer_group)
         interviewer_scroll.setWidgetResizable(True)
@@ -121,7 +128,7 @@ class LeftPanel(QWidget):
             self, "Open Log File", "", "Text Files (*.txt)"
         )
         if file_path:
-            logger.info("Loaded file: %s", file_path)
+            logger.info("📂 Loaded file: %s", file_path)
             parser = LogParser(file_path)
             self.raw_logs = parser.logs
             self.logsLoaded.emit(self.raw_logs)
@@ -129,8 +136,7 @@ class LeftPanel(QWidget):
 
     def _populate_name_selections(self) -> None:
         """
-        Create checkboxes for each discovered name in logs, sorted by descending frequency.
-        Use the raw name for logic keys, and a display string for user text.
+        Creates checkboxes for each discovered name in logs, sorted by frequency.
         """
         # Clear old checkboxes
         for layout in (self.interviewer_layout, self.interrogated_layout):
@@ -155,14 +161,14 @@ class LeftPanel(QWidget):
                     raw_name = match.group("name")
                     freq[raw_name] = freq.get(raw_name, 0) + 1
 
-        # Sort by descending frequency
+        # Sort names by frequency
         sorted_names = sorted(freq.items(), key=lambda x: -x[1])
-        for (raw_name, count) in sorted_names:
+        for raw_name, count in sorted_names:
             display_text = f"{raw_name} ({count})"
             cb_i = QCheckBox(display_text, self)
             cb_o = QCheckBox(display_text, self)
 
-            # Connect partial with the raw_name for consistent lookups
+            # Connect with the raw_name
             cb_i.stateChanged.connect(partial(self._on_interviewer_changed, raw_name))
             cb_o.stateChanged.connect(partial(self._on_interrogated_changed, raw_name))
 
@@ -170,64 +176,76 @@ class LeftPanel(QWidget):
             self.interviewer_layout.addWidget(cb_i)
             self.interrogated_layout.addWidget(cb_o)
 
-            # Store references in dictionaries
+            # Store references
             self.interviewer_checkboxes[raw_name] = cb_i
             self.interrogated_checkboxes[raw_name] = cb_o
 
-        # Emit to update the rest of the UI
+        # Emit updated names
         self._emit_names_updated()
 
     def _on_interviewer_changed(self, raw_name: str, state: int) -> None:
-        is_checked = (state == Qt.CheckState.Checked)
+        """
+        Handles checking/unchecking of Interviewer checkboxes.
+        Ensures the same name is disabled in Interrogated.
+        """
+        is_checked = state == Qt.CheckState.Checked
+        logger.debug(
+            f"DEBUG: Interviewer Checkbox Clicked -> {raw_name}, State: {state}"
+        )
 
         if is_checked:
             if raw_name not in self._interviewer_order:
                 self._interviewer_order.append(raw_name)
+                logger.debug(f"✅ Added to Interviewers: {raw_name}")
 
+            # Disable in Interrogated
             if raw_name in self.interrogated_checkboxes:
-                other = self.interrogated_checkboxes[raw_name]
-                other.setChecked(False)
-                other.setCheckable(False)
-                other.setEnabled(False)
-                if raw_name in self._interrogated_order:
-                    self._interrogated_order.remove(raw_name)
+                self.interrogated_checkboxes[raw_name].setChecked(False)
+                self.interrogated_checkboxes[raw_name].setEnabled(False)
+                logger.debug(f"🚫 Disabled '{raw_name}' in Interrogated")
         else:
             if raw_name in self._interviewer_order:
                 self._interviewer_order.remove(raw_name)
+                logger.debug(f"❌ Removed from Interviewers: {raw_name}")
 
+            # Re-enable in Interrogated
             if raw_name in self.interrogated_checkboxes:
-                other = self.interrogated_checkboxes[raw_name]
-                other.setCheckable(True)
-                other.setEnabled(True)
+                self.interrogated_checkboxes[raw_name].setEnabled(True)
+                logger.debug(f"🔓 Enabled '{raw_name}' in Interrogated")
 
         self._emit_names_updated()
 
-
     def _on_interrogated_changed(self, raw_name: str, state: int) -> None:
-        is_checked = (state == Qt.CheckState.Checked)
+        """
+        Handles checking/unchecking of Interrogated checkboxes.
+        Ensures the same name is disabled in Interviewer.
+        """
+        is_checked = state == Qt.CheckState.Checked
+        logger.debug(
+            f"DEBUG: Interrogated Checkbox Clicked -> {raw_name}, State: {state}"
+        )
 
         if is_checked:
             if raw_name not in self._interrogated_order:
                 self._interrogated_order.append(raw_name)
+                logger.debug(f"✅ Added to Interrogated: {raw_name}")
 
+            # Disable in Interviewer
             if raw_name in self.interviewer_checkboxes:
-                other = self.interviewer_checkboxes[raw_name]
-                other.setChecked(False)
-                other.setCheckable(False)
-                other.setEnabled(False)
-                if raw_name in self._interviewer_order:
-                    self._interviewer_order.remove(raw_name)
+                self.interviewer_checkboxes[raw_name].setChecked(False)
+                self.interviewer_checkboxes[raw_name].setEnabled(False)
+                logger.debug(f"🚫 Disabled '{raw_name}' in Interviewer")
         else:
             if raw_name in self._interrogated_order:
                 self._interrogated_order.remove(raw_name)
+                logger.debug(f"❌ Removed from Interrogated: {raw_name}")
 
+            # Re-enable in Interviewer
             if raw_name in self.interviewer_checkboxes:
-                other = self.interviewer_checkboxes[raw_name]
-                other.setCheckable(True)
-                other.setEnabled(True)
+                self.interviewer_checkboxes[raw_name].setEnabled(True)
+                logger.debug(f"🔓 Enabled '{raw_name}' in Interviewer")
 
         self._emit_names_updated()
-
 
     def _emit_names_updated(self) -> None:
         """
@@ -235,4 +253,9 @@ class LeftPanel(QWidget):
         whether 'Show only related' is checked.
         """
         show_related = self.show_only_related_checkbox.isChecked()
-        self.namesUpdated.emit(self._interviewer_order, self._interrogated_order, show_related)
+        logger.debug(
+            f"🔹 Emitting Names -> Interviewers: {self._interviewer_order}, Interrogated: {self._interrogated_order}, ShowOnlyRelated: {show_related}"
+        )
+        self.namesUpdated.emit(
+            self._interviewer_order, self._interrogated_order, show_related
+        )

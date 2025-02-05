@@ -31,8 +31,8 @@ class RightPanel(QWidget):
       - orderChanged(str): 'ASC' or 'DESC'
     """
 
-    filterTogglesUpdated = pyqtSignal(dict)  # e.g. {"📅 Tog date": True, ...}
-    orderChanged = pyqtSignal(str)
+    filterTogglesUpdated = pyqtSignal(dict)  # Example: {"📅 Tog date": True, ...}
+    orderChanged = pyqtSignal(str)  # Example: "ASC" or "DESC"
 
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
@@ -53,8 +53,8 @@ class RightPanel(QWidget):
         self._toggles: Dict[str, QPushButton] = {}
 
         self._order_label = QLabel("Logs order", self)
-        self._asc_button = QPushButton("ASC ⬆", self)
-        self._desc_button = QPushButton("DESC ⬇", self)
+        self._asc_button = QPushButton("ASC ⬆")
+        self._desc_button = QPushButton("DESC ⬇")
 
         self.workspace = Workspace()
 
@@ -70,7 +70,7 @@ class RightPanel(QWidget):
 
         self._asc_button.setCheckable(True)
         self._desc_button.setCheckable(True)
-        self._asc_button.setChecked(True)
+        self._asc_button.setChecked(True)  # Default is ASC order
 
         order_layout = QHBoxLayout()
         order_layout.addWidget(self._order_label)
@@ -100,34 +100,42 @@ class RightPanel(QWidget):
         self._asc_button.clicked.connect(self._on_asc_clicked)
         self._desc_button.clicked.connect(self._on_desc_clicked)
 
-        # Connect each toggle to update filter states
+        # Connect each toggle button with its handler
         for name, btn in self._toggles.items():
-            btn.toggled.connect(lambda _, n=name: self._on_toggle_changed(n))
+            btn.toggled.connect(
+                lambda checked, n=name: self._on_toggle_changed(n, checked)
+            )
 
     # -------------------- ORDER --------------------
 
     def _on_asc_clicked(self) -> None:
         """Set order to ASC and emit signal."""
-        self._sort_order = "ASC"
-        self._asc_button.setChecked(True)
-        self._desc_button.setChecked(False)
-        self.orderChanged.emit("ASC")
+        if self._sort_order != "ASC":
+            self._sort_order = "ASC"
+            self._asc_button.setChecked(True)
+            self._desc_button.setChecked(False)
+            self.orderChanged.emit("ASC")
+            self.workspace.on_order_changed("ASC")
 
     def _on_desc_clicked(self) -> None:
         """Set order to DESC and emit signal."""
-        self._sort_order = "DESC"
-        self._asc_button.setChecked(False)
-        self._desc_button.setChecked(True)
-        self.orderChanged.emit("DESC")
+        if self._sort_order != "DESC":
+            self._sort_order = "DESC"
+            self._asc_button.setChecked(False)
+            self._desc_button.setChecked(True)
+            self.orderChanged.emit("DESC")
+            self.workspace.on_order_changed("DESC")
 
     # -------------------- TOGGLES --------------------
 
-    def _on_toggle_changed(self, toggle_name: str) -> None:
+    def _on_toggle_changed(self, toggle_name: str, checked: bool) -> None:
         """
         Emit current states of all toggles whenever any single toggle changes.
         """
         states = {name: btn.isChecked() for name, btn in self._toggles.items()}
+        logger.debug(f"🔄 Toggle Updated -> {toggle_name}: {checked}")
         self.filterTogglesUpdated.emit(states)
+        self.workspace.on_filter_toggles_updated(states)
 
     # -------------------- EXTERNAL INTERFACE --------------------
 
@@ -136,11 +144,12 @@ class RightPanel(QWidget):
         Called by MainWindow/LeftPanel when logs are loaded.
         Enables toggles, sets logs in the workspace, triggers an update.
         """
+        logger.debug(f"📂 Logs Loaded -> {len(logs)} entries")
         self._raw_logs = logs
         for btn in self._toggles.values():
             btn.setEnabled(True)
 
-        # By default, set all toggles to True (as your older code did).
+        # By default, set all toggles to True (matching old behavior)
         for name in self._toggle_names:
             self._toggles[name].setChecked(True)
 
@@ -148,12 +157,17 @@ class RightPanel(QWidget):
         self.workspace.set_raw_logs(logs)
         self.workspace.update_view()
 
-    def on_names_updated(self, interviewers: List[str], interrogated: List[str], show_related: bool) -> None:
+    def on_names_updated(
+        self, interviewers: List[str], interrogated: List[str], show_related: bool
+    ) -> None:
         """
         Called when LeftPanel emits 'namesUpdated' with the ordered interviewers,
         ordered interrogated, and show_only_related flag.
         We pass these to the Workspace, then update_view.
         """
+        logger.debug(
+            f"📝 Names Updated -> Interviewers: {interviewers}, Interrogated: {interrogated}, ShowOnlyRelated: {show_related}"
+        )
         self.workspace.set_selected_names(interviewers, interrogated, show_related)
         self.workspace.update_view()
 

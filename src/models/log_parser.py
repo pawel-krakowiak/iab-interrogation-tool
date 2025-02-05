@@ -7,7 +7,7 @@ Loads raw log lines from a file, extracts unique users, and provides sorted logs
 import os
 import re
 import logging
-from typing import List, Set
+from typing import List, Set, Dict
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +27,7 @@ class LogParser:
         self.file_path: str = file_path
         self.logs: List[str] = []
         self.users: Set[str] = set()
+        self.user_frequencies: Dict[str, int] = {}
         self._load_logs()
 
     def _load_logs(self) -> None:
@@ -35,12 +36,17 @@ class LogParser:
             logger.error("File not found: %s", self.file_path)
             raise ValueError(f"File not found: {self.file_path}")
 
-        logger.info("Loading logs from %s", self.file_path)
         with open(self.file_path, "r", encoding="utf-8") as file:
             for line in file:
-                stripped_line = line.strip()
-                self.logs.append(stripped_line)
-                self._extract_user(stripped_line)
+                self.logs.append(line.strip())
+                match = self.USER_PATTERN.search(line)
+                if match:
+                    user = match.group(1)
+                    self.users.add(user)
+                    if user in self.user_frequencies:
+                        self.user_frequencies[user] += 1
+                    else:
+                        self.user_frequencies[user] = 1
 
     def _extract_user(self, line: str) -> None:
         """Extracts unique users from a line based on USER_PATTERN."""
