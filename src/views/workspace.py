@@ -88,6 +88,9 @@ class Workspace(QWidget):
         self._interviewer_order = interviewer_order[:]
         self._interrogated_order = interrogated_order[:]
         self._show_only_related = show_related
+        logger.debug(
+            f"📌 Workspace Received -> Interviewers: {self._interviewer_order}, Interrogated: {self._interrogated_order}"
+        )
         self.update_view()
 
     # ----- Render -----
@@ -104,7 +107,7 @@ class Workspace(QWidget):
         if not self._raw_logs:
             self._text_edit.setHtml("<p>No logs loaded</p>")
             return
-    
+
         # Retrieve current toggle states (default to True)
         show_date = self._toggles.get("📅 Tog date", True)
         show_hour = self._toggles.get("⏰ Tog hour", True)
@@ -116,22 +119,22 @@ class Workspace(QWidget):
         filter_unrecognized = self._toggles.get("🕵️ Tog Unrecognized", True)
         filter_radio = self._toggles.get("🚔 Tog Radio", True)
         show_only_related = self._show_only_related
-    
+
         # Sort logs
         logs_to_iterate = self._raw_logs[:]
         if self._order == "DESC":
             logs_to_iterate.reverse()
-    
+
         table_rows = []
         row_index = 1
-    
+
         # Selected persons
         selected_I = self._interviewer_order
         selected_O = self._interrogated_order
-    
+
         for line in logs_to_iterate:
             parsed = self._formatter.parse_line(line)
-    
+
             # If the line does not match the expected pattern, treat as unrecognized
             if not parsed:
                 if filter_unrecognized:
@@ -139,19 +142,12 @@ class Workspace(QWidget):
                     table_rows.append(f"<tr>{row_html}</tr>")
                     row_index += 1
                 continue
-    
+
             action = parsed["action"]
-    
-            # If action is not recognized, apply 'Tog Unrecognized' filter
-            if action not in ACTION_COLOR_MAP and not filter_unrecognized:
-                continue
-    
-            # If the message is a radio transmission (e.g., ** [Channel: XYZ])
+            prefix = parsed.get("prefix", "").strip()
             message = parsed["message"]
-            if not filter_radio and ("Kanał:" in message):
-                continue
-    
-            # Apply standard action-based filters
+
+            # Apply action-based filters
             if action == "Akcja /me" and not filter_me:
                 continue
             if action == "Akcja /do" and not filter_do:
@@ -162,26 +158,18 @@ class Workspace(QWidget):
                 continue
             if action == "Komenda" and not filter_commands:
                 continue
-    
-            # 'Show only related' logic (to be implemented in the next step)
-            always_show = parsed["action"] == "Komenda" or parsed.get("is_radio", False)
-            combined_text = f"{parsed.get('prefix', '')} {parsed.get('message', '')}".lower()
-            matching_I = [nm.lower() for nm in selected_I if nm.lower() in combined_text]
-            matching_O = [nm.lower() for nm in selected_O if nm.lower() in combined_text]
-    
-            if show_only_related and not always_show and not (matching_I or matching_O):
+
+            # If the message is a radio transmission (e.g., ** [Channel: XYZ])
+            if not filter_radio and ("Kanał:" in message):
                 continue
-    
+
             # ---------- ADDING PREFIXES [I] AND [O] ----------
             tag = ""
-            prefix = parsed.get("prefix", "").strip()
-    
-            if prefix:
-                if prefix in selected_I:
-                    tag = '<span style="color: #00FF00; font-weight: bold;">[I]</span> '
-                elif prefix in selected_O:
-                    tag = '<span style="color: #FF0000; font-weight: bold;">[O]</span> '
-    
+            if prefix in selected_I:
+                tag = '<span style="color: #00FF00; font-weight: bold;">[I]</span> '
+            elif prefix in selected_O:
+                tag = '<span style="color: #FF0000; font-weight: bold;">[O]</span> '
+
             # Construct timestamp based on toggles
             timestamp_parts = []
             if show_date and parsed.get("date"):
@@ -189,19 +177,22 @@ class Workspace(QWidget):
             if show_hour and parsed.get("time"):
                 timestamp_parts.append(parsed["time"])
             new_timestamp = f"[{' '.join(timestamp_parts)}]" if timestamp_parts else ""
-    
-            # Formatting with color codes
+
+            # Formatting HTML
             timestamp_html = f'<span style="color: #00BFFF; font-weight: bold;">{new_timestamp}</span>'
             action_color = ACTION_COLOR_MAP.get(action, ACTION_COLOR_MAP["default"])
             action_html = f'<span style="color: {action_color}; font-weight: bold;">[{action}]</span>'
-            prefix_html = f'{tag}<span style="color: #FFFFFF; font-weight: bold;">{prefix} </span>' if prefix else ""
+            prefix_html = (
+                f'{tag}<span style="color: #FFFFFF; font-weight: bold;">{prefix} </span>'
+                if prefix
+                else ""
+            )
             message_html = f'<span style="color: #CCCCCC;">{message}</span>'
-    
-            # Construct table row
+
             row_html = f"<td>{row_index}</td><td>{timestamp_html} {action_html} {prefix_html} {message_html}</td>"
             table_rows.append(f"<tr>{row_html}</tr>")
             row_index += 1
-    
+
         # Render the table
         table_html = "<table>" + "".join(table_rows) + "</table>"
         self._text_edit.setHtml(table_html)

@@ -19,5 +19,4 @@ def setup_logger() -> Logger:
     return logger
 
 
-
 logger = setup_logger()

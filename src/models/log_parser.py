@@ -45,7 +45,6 @@ class LogParser:
             logger.error(f"Error loading file {self.file_path}: {e}")
             raise
 
-
     def _extract_user(self, line: str) -> None:
         """Extracts unique users from a line based on USER_PATTERN."""
         match = self.USER_PATTERN.search(line)
