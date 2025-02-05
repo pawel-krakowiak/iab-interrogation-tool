@@ -1,4 +1,3 @@
-import os
 import pytest
 from pathlib import Path
 from src.models.log_parser import LogParser
@@ -21,7 +20,8 @@ def sample_log_file(tmp_path: Path) -> str:
 
 def test_load_logs(sample_log_file: str) -> None:
     """
-    Test that LogParser loads all lines from the file and extracts unique users.
+    Test that LogParser loads all lines from the file and extracts unique
+    users.
     """
     parser = LogParser(sample_log_file)
     # There are three lines in the file.

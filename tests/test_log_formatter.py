@@ -1,5 +1,4 @@
 import pytest
-from datetime import datetime
 from src.models.log_formatter import LogFormatter
 
 
@@ -14,13 +13,13 @@ def test_parse_line_normal(formatter: LogFormatter) -> None:
     Test parsing a normal log line (non-radio).
     Expected to extract timestamp, action, prefix and message correctly.
     """
-    line = "[2.02.2025 22:19:38] [Czat IC] Howard Goldberg mówi: Na glebe skurwysynu ręce na głowę szeroko nogi."
+    line = "[2.02.2025 22:19:38] [Czat IC] Howard Goldberg mówi: Elo"
     result = formatter.parse_line(line)
     assert result is not None
     assert result["timestamp"] == "2.02.2025 22:19:38"
     # Expected prefix and message.
     assert result["prefix"] == "Howard Goldberg mówi:"
-    assert result["message"] == "Na glebe skurwysynu ręce na głowę szeroko nogi."
+    assert result["message"] == "Elo"
     assert result["is_radio"] is None
 
 
@@ -29,7 +28,7 @@ def test_parse_line_radio(formatter: LogFormatter) -> None:
     Test parsing a radio call log line.
     Expected to flag the line as radio and extract prefix and message.
     """
-    line = "[2.02.2025 22:20:48] [Czat IC] John Doe mówi (radio): This is a radio call."
+    line = "[2.02.2025 22:20:48] [Czat IC] John Doe mówi (radio): This is a radio call." # noqa
     result = formatter.parse_line(line)
     assert result is not None
     # The prefix should include "(radio)" and is_radio should be True.
@@ -112,7 +111,9 @@ def test_extract_speaker_info_radio(formatter: LogFormatter) -> None:
 
 
 def test_extract_speaker_info_no_match(formatter: LogFormatter) -> None:
-    """Test extracting speaker info from a message that doesn't match the pattern."""
+    """
+    Test extracting speaker info from a message that doesn't match the pattern.
+    """
     prefix, is_radio, message = formatter._extract_speaker_info(
         "This is a random message."
     )

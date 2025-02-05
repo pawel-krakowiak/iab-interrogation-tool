@@ -38,7 +38,8 @@ run:
 # Target to run linters
 lint:
 	@echo "🔍 Running linters..."
-	PYTHONPATH=$(PROJECT_ROOT) poetry run flake8 $(SRC_DIR) $(TEST_DIR)
+	PYTHONPATH=$(PROJECT_ROOT) poetry run flake8 --config=$(PROJECT_ROOT)/.flake8 $(SRC_DIR) $(TEST_DIR)
+	PYTHONPATH=$(SRC_DIR) poetry run mypy --config=$(PROJECT_ROOT)/pyproject.toml $(SRC_DIR)
 
 # Target to format code
 format:

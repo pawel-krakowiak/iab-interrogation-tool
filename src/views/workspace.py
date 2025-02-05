@@ -4,7 +4,8 @@ src/views/workspace.py
 Displays logs in an HTML table with advanced filtering logic:
 - Toggles for date/hour, /me, /do, OOC, PW, radio, etc.
 - ASC/DESC order
-- Always label lines containing selected interviewers or interrogated with [I], [I1], etc. or [O], [O1], ...
+- Always label lines containing selected interviewers or interrogated with
+[I], [I1], etc. or [O], [O1], ...
 - Only hide lines that don't involve them if show_only_related is True.
 """
 
@@ -14,8 +15,6 @@ from typing import List, Dict, Optional
 
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QTextEdit
 from PyQt6.QtGui import QFont
-from PyQt6.QtCore import Qt
-
 from src.models.log_formatter import LogFormatter, ACTION_COLOR_MAP
 
 logger = logging.getLogger(__name__)
@@ -89,9 +88,6 @@ class Workspace(QWidget):
         self._interviewer_order = interviewer_order[:]
         self._interrogated_order = interrogated_order[:]
         self._show_only_related = show_related
-        logger.debug(
-            f"📌 Workspace Received -> Interviewers: {self._interviewer_order}, Interrogated: {self._interrogated_order}"
-        )
         self.update_view()
 
     # ----- Render -----
@@ -251,7 +247,10 @@ class Workspace(QWidget):
             message_html = f'<span style="color: #CCCCCC;">{message}</span>'
 
             # 🔹 BUILD TABLE ROW
-            row_html = f"<td>{row_index}</td><td>{timestamp_html} {tag}{action_html} {prefix_html} {message_html}</td>"
+            row_html = (
+                f"<td>{row_index}</td><td>{timestamp_html} {tag}"
+                f"{action_html} {prefix_html} {message_html}</td>"
+            )
             table_rows.append(f"<tr>{row_html}</tr>")
             row_index += 1
 

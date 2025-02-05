@@ -71,7 +71,7 @@ class LogFormatter:
             "action": action,
             "prefix": prefix,
             "message": message,
-            "is_radio": is_radio,
+            "is_radio": str(is_radio).lower(),
         }
 
     def _parse_timestamp(self, timestamp: str) -> Tuple[str, str]:
@@ -99,7 +99,7 @@ class LogFormatter:
         prefix = match.group(0).strip()
         extra = match.group("extra") or ""
         is_radio = extra.lower() == "radio" or "Kanał:" in message
-        new_message = message[len(prefix) :].strip()
+        new_message = message[len(prefix):].strip()
         return prefix, is_radio, new_message
 
     def format_line(self, line: str, index: int) -> str:

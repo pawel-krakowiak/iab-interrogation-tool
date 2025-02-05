@@ -13,7 +13,7 @@ from functools import partial
 from typing import List, Dict
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton
 from PyQt6.QtGui import QFont
-from PyQt6.QtCore import Qt, pyqtSignal
+from PyQt6.QtCore import pyqtSignal
 
 from src.views.workspace import Workspace
 
@@ -167,7 +167,7 @@ class RightPanel(QWidget):
         We pass these to the Workspace, then update_view.
         """
         logger.debug(
-            f"📝 Names Updated -> Interviewers: {interviewers}, Interrogated: {interrogated}, ShowOnlyRelated: {show_related}"
+            f"📝 Names Updated -> [I]: {interviewers}, [O]: {interrogated}, OnlyRelated: {show_related}"
         )
         self.workspace.set_selected_names(interviewers, interrogated, show_related)
         self.workspace.update_view()

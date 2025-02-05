@@ -155,7 +155,7 @@ class LeftPanel(QWidget):
         self._interviewer_order.clear()
         self._interrogated_order.clear()
 
-        freq = {}
+        freq: Dict[str, int] = {}
         formatter = LogFormatter()
         for line in self.raw_logs:
             parsed = formatter.parse_line(line)
@@ -267,11 +267,6 @@ class LeftPanel(QWidget):
         whether 'Show only related' is checked.
         """
         show_related = self.show_only_related_checkbox.isChecked()
-
-        # Log debugging information
-        logger.debug(
-            f"🔹 Emitting Names -> Interviewers: {self._interviewer_order}, Interrogated: {self._interrogated_order}, ShowOnlyRelated: {show_related}"
-        )
 
         # Emit signal with updated values
         self.namesUpdated.emit(

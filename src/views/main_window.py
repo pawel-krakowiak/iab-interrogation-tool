@@ -77,7 +77,7 @@ class MainWindow(QMainWindow):
         Passes the updated names to RightPanel's workspace.
         """
         logger.debug(
-            f"📝 Name Selection Updated -> Interviewers: {interviewers}, Interrogated: {interrogated}, ShowOnlyRelated: {show_related}"
+            f"📝 Name Selection  [I]: {interviewers}, [O]: {interrogated}, OnlyRelated: {show_related}"
         )
         self.right_panel.on_names_updated(interviewers, interrogated, show_related)
 
