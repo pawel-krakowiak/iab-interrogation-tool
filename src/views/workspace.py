@@ -94,15 +94,15 @@ class Workspace(QWidget):
         self.update_view()
 
     # ----- Render -----
-
     def update_view(self) -> None:
         """
         Rebuilds the workspace display based on toggles, ordering, and selected names.
-        - Toggles for date/hour, /me, /do, OOC, PW, commands, unrecognized, radio
-        - ASC/DESC sorting
         - '[I]' (green) prefix for interviewers
         - '[O]' (red) prefix for interrogated persons
-        - Filters out unrelated messages if 'Show only related' is enabled (to be implemented)
+        - Matches names only when they are the speaker (not just mentioned)
+        - Does NOT apply tags to 'Komenda' (starts with '/' or '.') or 'PW' (starts with '[')
+        - Applies all filtering toggles correctly
+        - Supports 'Tog Action Tags' to hide action names (e.g. '[Czat IC]')
         """
         if not self._raw_logs:
             self._text_edit.setHtml("<p>No logs loaded</p>")
@@ -118,6 +118,7 @@ class Workspace(QWidget):
         filter_commands = self._toggles.get("🔧 Tog Commands", True)
         filter_unrecognized = self._toggles.get("🕵️ Tog Unrecognized", True)
         filter_radio = self._toggles.get("🚔 Tog Radio", True)
+        filter_action_tags = self._toggles.get("🔖 Tog Action Tags", True)
         show_only_related = self._show_only_related
 
         # Sort logs
@@ -129,25 +130,24 @@ class Workspace(QWidget):
         row_index = 1
 
         # Selected persons
-        selected_I = self._interviewer_order
-        selected_O = self._interrogated_order
+        selected_I = set(self._interviewer_order)
+        selected_O = set(self._interrogated_order)
 
         for line in logs_to_iterate:
             parsed = self._formatter.parse_line(line)
-
-            # If the line does not match the expected pattern, treat as unrecognized
             if not parsed:
                 if filter_unrecognized:
-                    row_html = f"<td>{row_index}</td><td><pre>{line}</pre></td>"
-                    table_rows.append(f"<tr>{row_html}</tr>")
-                    row_index += 1
+                    continue  # Now actually hides unrecognized logs!
+                row_html = f"<td>{row_index}</td><td><pre>{line}</pre></td>"
+                table_rows.append(f"<tr>{row_html}</tr>")
+                row_index += 1
                 continue
 
             action = parsed["action"]
             prefix = parsed.get("prefix", "").strip()
-            message = parsed["message"]
+            message = parsed["message"].strip()
 
-            # Apply action-based filters
+            # 🔹 FILTERS BASED ON TOGGLES
             if action == "Akcja /me" and not filter_me:
                 continue
             if action == "Akcja /do" and not filter_do:
@@ -159,18 +159,48 @@ class Workspace(QWidget):
             if action == "Komenda" and not filter_commands:
                 continue
 
-            # If the message is a radio transmission (e.g., ** [Channel: XYZ])
+            # 🔹 FILTER RADIO
             if not filter_radio and ("Kanał:" in message):
                 continue
 
-            # ---------- ADDING PREFIXES [I] AND [O] ----------
-            tag = ""
-            if prefix in selected_I:
-                tag = '<span style="color: #00FF00; font-weight: bold;">[I]</span> '
-            elif prefix in selected_O:
-                tag = '<span style="color: #FF0000; font-weight: bold;">[O]</span> '
+            # 🔹 FILTER 'SHOW ONLY RELATED'
+            always_show = action == "Komenda" or parsed.get("is_radio", False)
+            combined_text = f"{prefix} {message}".strip().lower()
+            matching_I = [
+                nm.lower() for nm in selected_I if nm.lower() in combined_text
+            ]
+            matching_O = [
+                nm.lower() for nm in selected_O if nm.lower() in combined_text
+            ]
 
-            # Construct timestamp based on toggles
+            if show_only_related and not always_show and not (matching_I or matching_O):
+                continue
+
+            # 🔹 IGNORE [I] and [O] FOR COMMANDS AND PW
+            is_command_or_pw = (
+                message.startswith("/")
+                or message.startswith(".")
+                or message.startswith("[")
+                and not message.startswith("[.")
+            )
+
+            # 🔹 ADDING PREFIXES [I] AND [O] – only if the person WROTE the message
+            tag = ""
+            if not is_command_or_pw:
+                full_text = f"{prefix} {message}".strip()
+                if any(name.lower() in full_text.lower() for name in selected_I):
+                    tag = '<span style="color: #00FF00; font-weight: bold;">[I]</span> '
+                elif any(name.lower() in full_text.lower() for name in selected_O):
+                    tag = '<span style="color: #FF0000; font-weight: bold;">[O]</span> '
+
+            # 🔹 REMOVE ACTION TAGS IF TOG ACTION TAGS IS OFF
+            if not filter_action_tags:
+                action_html = ""
+            else:
+                action_color = ACTION_COLOR_MAP.get(action, ACTION_COLOR_MAP["default"])
+                action_html = f'<span style="color: {action_color}; font-weight: bold;">[{action}]</span>'
+
+            # 🔹 CONSTRUCT TIMESTAMP
             timestamp_parts = []
             if show_date and parsed.get("date"):
                 timestamp_parts.append(parsed["date"])
@@ -178,21 +208,20 @@ class Workspace(QWidget):
                 timestamp_parts.append(parsed["time"])
             new_timestamp = f"[{' '.join(timestamp_parts)}]" if timestamp_parts else ""
 
-            # Formatting HTML
+            # 🔹 FORMAT HTML
             timestamp_html = f'<span style="color: #00BFFF; font-weight: bold;">{new_timestamp}</span>'
-            action_color = ACTION_COLOR_MAP.get(action, ACTION_COLOR_MAP["default"])
-            action_html = f'<span style="color: {action_color}; font-weight: bold;">[{action}]</span>'
             prefix_html = (
-                f'{tag}<span style="color: #FFFFFF; font-weight: bold;">{prefix} </span>'
+                f'<span style="color: #FFFFFF; font-weight: bold;">{prefix} </span>'
                 if prefix
                 else ""
             )
             message_html = f'<span style="color: #CCCCCC;">{message}</span>'
 
-            row_html = f"<td>{row_index}</td><td>{timestamp_html} {action_html} {prefix_html} {message_html}</td>"
+            # 🔹 BUILD TABLE ROW
+            row_html = f"<td>{row_index}</td><td>{timestamp_html} {tag}{action_html} {prefix_html} {message_html}</td>"
             table_rows.append(f"<tr>{row_html}</tr>")
             row_index += 1
 
-        # Render the table
+        # 🔹 RENDER TABLE
         table_html = "<table>" + "".join(table_rows) + "</table>"
         self._text_edit.setHtml(table_html)

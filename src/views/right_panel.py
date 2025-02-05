@@ -50,6 +50,7 @@ class RightPanel(QWidget):
             "🔧 Tog Commands",
             "🕵️ Tog Unrecognized",
             "🚔 Tog Radio",
+            "🔖 Tog Action Tags",
         ]
         self._toggles: Dict[str, QPushButton] = {}
 
